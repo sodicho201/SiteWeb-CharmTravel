@@ -28,14 +28,17 @@
     /* Overlay sombre */
     .overlay {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0); /* transparent par défaut */
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        gap: 10px;
         transition: background 0.3s ease;
     }
 
@@ -50,6 +53,10 @@
         font-family: 'Manrop', sans-serif;
         text-align: center;
         text-shadow: 0 0 5px rgba(0,0,0,0.7);
+        z-index: 10;
+    }
+
+    .theme-btn {
         z-index: 10;
     }
 </style>
@@ -389,71 +396,83 @@
 
         <!-- Cartes des services -->
         <div class="row">
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="1">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
-                    <div class="news-image">
+                    <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/news/01.jpg') }}" alt="Service 1">
                         <div class="overlay">
                             <div class="service-name">Adventure Tours</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="1">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="2">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="news-card-items">
-                    <div class="news-image">
+                    <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 2">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="2">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="3">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 3">
+                    <div class="news-image" style="height: 260px">
+                        <img src="{{ asset('assets/img/news/04.jpg') }}" alt="Service 3">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="4">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
-                    <div class="news-image">
+                    <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/news/01.jpg') }}" alt="Service 4">
                         <div class="overlay">
                             <div class="service-name">Adventure Tours</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="5">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="news-card-items">
-                    <div class="news-image">
+                    <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 5">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="5">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="6">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 6">
+                    <div class="news-image" style="height: 260px">
+                        <img src="{{ asset('assets/img/news/04.jpg') }}" alt="Service 6">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="6">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
 
         <!-- Détails des services (cachés par défaut) -->
@@ -482,8 +501,15 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -533,15 +559,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/01.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -574,8 +603,16 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -625,15 +662,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -666,8 +706,16 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -717,15 +765,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/04.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -758,8 +809,15 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -809,15 +867,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/01.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -850,8 +911,16 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -901,15 +970,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -942,8 +1014,16 @@
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
                                             Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
                                         </p>
-                                        <div class="feature-area">
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
                                             <div class="line-shape">
                                                 <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
@@ -993,15 +1073,18 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left">
-                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/news/04.jpg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -1689,7 +1772,7 @@
 @section('js')
 <script>
     $(document).ready(function() {
-        $('.service-card').on('click', function() {
+        $('.service-btn').on('click', function() {
             var serviceId = $(this).data('service');
 
             // cacher tous les détails
