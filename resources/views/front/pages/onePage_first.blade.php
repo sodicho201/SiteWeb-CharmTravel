@@ -470,7 +470,7 @@
         <div class="service-details mt-5">
             <div class="service-detail wow img-custom-anim-left-2" id="detail-1" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
@@ -562,7 +562,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-2" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
@@ -654,7 +654,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-3" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
@@ -746,7 +746,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
@@ -838,7 +838,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-5" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
@@ -930,7 +930,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-6" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="assets/img/plane-shape1.png" alt="img">
                     </div>
