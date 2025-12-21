@@ -1602,7 +1602,7 @@
                 <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
                     <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
             </div>
-            <div class="video-image bg-cover" style="background-image: url(assets/img/video-bg.jpg);">
+            <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
                 <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
                     <i class="fa-duotone fa-play"></i>
                 </a>
@@ -1613,7 +1613,7 @@
 
 <!-- Instagram Banner Section Start -->
 <div class="instagram-banner fix section-padding bg-cover"
-    style="background-image: url(assets/img/instagram/bg.jpg);">
+    style="background-image: url('{{ asset('assets/img/instagram/bg.jpg') }}');">
     <div class="instagram-wrapper">
         <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h2>
         <div class="swiper instagram-banner-slider">
