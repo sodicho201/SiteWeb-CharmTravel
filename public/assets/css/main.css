@@ -7783,10 +7783,11 @@ span {
   font: bold 5em "Manrope", sans-serif, "Manrope", sans-serif;
   text-align: center;
   user-select: none;
+  font-size: 3.8rem;
 }
 @media (max-width: 767px) {
   .preloader .animation-preloader .txt-loading {
-    font-size: 2.5em;
+    font-size: 1rem;
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
