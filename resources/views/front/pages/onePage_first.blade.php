@@ -61,7 +61,7 @@
     <div class="swiper hero-slider-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/03.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/04.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/04.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/03.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -152,7 +152,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="assets/img/icon/01.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/01.svg') }}" alt="img">
                     </div>
                     <div class="content">
                         <h3>
@@ -164,7 +164,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
                 <div class="feature-card-items">
                     <div class="icon bg-color">
-                        <img src="assets/img/icon/02.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/02.svg') }}" alt="img">
                     </div>
                     <div class="content">
                         <h3>
@@ -176,7 +176,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="assets/img/icon/03.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/03.svg') }}" alt="img">
                     </div>
                     <div class="content">
                         <h3>
@@ -188,7 +188,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="assets/img/icon/04.svg" alt="img">
+                        <img src="{{ asset('assets/img/icon/04.svg') }}" alt="img">
                     </div>
                     <div class="content">
                         <h3>
@@ -204,7 +204,7 @@
 <!-- Destination-category Section Start -->
 <section class="destination-category-section section-padding pt-0" id="destination">
     <div class="plane-shape float-bob-y">
-        <img src="assets/img/destination/shape.png" alt="img" style="width: 100%">
+        <img src="{{ asset('assets/img/destination/shape.png') }}" alt="img" style="width: 100%">
     </div>
     {{-- <div class="container">
         <div class="section-title text-center">
@@ -221,7 +221,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="assets/img/destination/category1.jpg" alt="img">
+                            <img src="{{ asset('assets/img/destination/category1.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -234,7 +234,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="assets/img/destination/category2.jpg" alt="img">
+                            <img src="{{ asset('assets/img/destination/category2.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -247,7 +247,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="assets/img/destination/category3.jpg" alt="img">
+                            <img src="{{ asset('assets/img/destination/category3.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -260,7 +260,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="assets/img/destination/category4.jpg" alt="img">
+                            <img src="{{ asset('assets/img/destination/category4.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -273,7 +273,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="assets/img/destination/category5.jpg" alt="img">
+                            <img src="{{ asset('assets/img/destination/category5.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -298,19 +298,19 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="assets/img/about/03.jpg" alt="img" class="wow img-custom-anim-left">
+                        <img src="{{ asset('assets/img/about/03.jpg') }}" alt="img" class="wow img-custom-anim-left">
                         <div class="shape-image float-bob-y">
-                            <img src="assets/img/about/04.png" alt="img">
+                            <img src="{{ asset('assets/img/about/04.png') }}" alt="img">
                         </div>
 
                         <div class="about-image-2">
-                            <img src="assets/img/about/05.jpg" alt="img" class="wow img-custom-anim-top"
+                            <img src="{{ asset('assets/img/about/05.jpg') }}" alt="img" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="plane-shape">
-                                <img src="assets/img/about/plane-shape2.png" alt="img">
+                                <img src="{{ asset('assets/img/about/plane-shape2.png') }}" alt="img">
                             </div>
                             {{-- <div class="circle-image">
-                                <img src="assets/img/about/circle.png" alt="img">
+                                <img src="{{ asset('assets/img/about/circle.png') }}" alt="img">
                             </div> --}}
                         </div>
                     </div>
@@ -352,7 +352,7 @@
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".5s">
                             <div class="about-icon-items">
                                 <div class="icon">
-                                    <img src="assets/img/about/cheak.png" alt="img">
+                                    <img src="{{ asset('assets/img/about/cheak.png') }}" alt="img">
                                 </div>
                                 <div class="content">
                                     <h5>
@@ -392,7 +392,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="1">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/01.jpg" alt="Service 1">
+                        <img src="{{ asset('assets/img/news/01.jpg') }}" alt="Service 1">
                         <div class="overlay">
                             <div class="service-name">Adventure Tours</div>
                         </div>
@@ -403,7 +403,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="2">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="Service 2">
+                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 2">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
                         </div>
@@ -414,7 +414,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="3">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="Service 3">
+                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 3">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
                         </div>
@@ -425,7 +425,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="4">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/01.jpg" alt="Service 4">
+                        <img src="{{ asset('assets/img/news/01.jpg') }}" alt="Service 4">
                         <div class="overlay">
                             <div class="service-name">Adventure Tours</div>
                         </div>
@@ -436,7 +436,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="5">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="Service 5">
+                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 5">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
                         </div>
@@ -447,7 +447,7 @@
             <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="6">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="Service 6">
+                        <img src="{{ asset('assets/img/news/02.jpg') }}" alt="Service 6">
                         <div class="overlay">
                             <div class="service-name">Luxury Cruises</div>
                         </div>
@@ -460,12 +460,12 @@
         <div class="service-details mt-5">
             <div class="service-detail wow img-custom-anim-left-2" id="detail-1" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -485,12 +485,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -513,7 +513,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -541,7 +541,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -552,12 +552,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-2" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -577,12 +577,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -605,7 +605,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -633,7 +633,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -644,12 +644,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-3" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -669,12 +669,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -697,7 +697,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -725,7 +725,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -736,12 +736,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -761,12 +761,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -789,7 +789,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -817,7 +817,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -828,12 +828,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-5" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -853,12 +853,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -881,7 +881,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -909,7 +909,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -920,12 +920,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-6" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="assets/img/plane-shape1.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="assets/img/plane-shape2.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -945,12 +945,12 @@
                                         </p>
                                         <div class="feature-area">
                                             <div class="line-shape">
-                                                <img src="assets/img/line-shape.png" alt="img">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
                                             </div>
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -973,7 +973,7 @@
                                             <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
                                                 <div class="feature-icon-item">
                                                     <div class="icon">
-                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <h5>
@@ -1001,7 +1001,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left">
-                                        <img src="assets/img/man-image.png" alt="img">
+                                        <img src="{{ asset('assets/img/man-image.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -1016,7 +1016,7 @@
 <!-- Cta Section Start -->
 <section class="cta-section section-padding pt-0">
     <div class="mobile-shape">
-        <img src="assets/img/mobile.png" alt="img">
+        <img src="{{ asset('assets/img/mobile.png') }}" alt="img">
     </div>
     <div class="container">
         <div class="row g-4">
@@ -1032,7 +1032,7 @@
                     <a href="tour-details.html" class="theme-btn">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
-                        <img src="assets/img/bag-shape.png" alt="img">
+                        <img src="{{ asset('assets/img/bag-shape.png') }}" alt="img">
                     </div>
                 </div>
             </div>
@@ -1048,7 +1048,7 @@
                     <a href="tour-details.html" class="theme-btn">Réserver un vol <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
-                        <img src="assets/img/plane-shape.png" alt="img">
+                        <img src="{{ asset('assets/img/plane-shape.png') }}" alt="img">
                     </div>
                 </div>
             </div>
@@ -1059,7 +1059,7 @@
 <!-- Popular-destination Section Start -->
 <section class="popular-destination-section section-padding pt-0" id="destination">
     <div class="car-shape float-bob-x">
-        <img src="assets/img/destination/car.png" alt="img">
+        <img src="{{ asset('assets/img/destination/car.png') }}" alt="img">
     </div>
     <div class="container">
         <div class="section-title-area justify-content-between">
@@ -1078,7 +1078,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="assets/img/destination/01.jpg" alt="img">
+                        <img src="{{ asset('assets/img/destination/01.jpg') }}" alt="img">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -1122,7 +1122,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="assets/img/destination/02.jpg" alt="img">
+                        <img src="{{ asset('assets/img/destination/02.jpg') }}" alt="img">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -1166,7 +1166,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="assets/img/destination/03.jpg" alt="img">
+                        <img src="{{ asset('assets/img/destination/03.jpg') }}" alt="img">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -1210,7 +1210,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="assets/img/destination/04.jpg" alt="img">
+                        <img src="{{ asset('assets/img/destination/04.jpg') }}" alt="img">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -1258,13 +1258,13 @@
 
 <!-- Deals-offer Section Start -->
 <section class="deals-offer-section section-padding fix bg-cover"
-    style="background-image: url(assets/img/offer/bg.jpg);">
+    style="background-image: url('{{ asset('assets/img/offer/bg.jpg') }}');">
     <div class="deals-offer-wrapper">
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="price-items">
                     {{-- <div class="price-image wow fadeInUp wow" data-wow-delay=".2s">
-                        <img src="assets/img/offer/price.png" alt="img">
+                        <img src="{{ asset('assets/img/offer/price.png') }}" alt="img">
                     </div> --}}
                     {{-- <div class="coming-soon-timer">
                         <div class="timer-content wow fadeInUp" data-wow-delay=".2s">
@@ -1368,7 +1368,7 @@
 <!-- Testimonial Section Start -->
 <section class="testimonial-section section-padding fix bg-cover" id="testimonial">
     <div class="bag-shape float-bob-x">
-        <img src="assets/img/testimonial/bag-shape.png" alt="img">
+        <img src="{{ asset('assets/img/testimonial/bag-shape.png') }}" alt="img">
     </div>
     <div class="container">
         <div class="section-title text-center">
@@ -1399,7 +1399,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="assets/img/testimonial/client-1.png" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/client-1.png') }}" alt="img">
                                     </div>
                                     <div class="text">
                                         <h4>Kristin Watson</h4>
@@ -1407,7 +1407,7 @@
                                     </div>
                                 </div>
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
                                         viewBox="0 0 45 45" fill="none">
                                         <path
                                             d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
@@ -1437,7 +1437,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="assets/img/testimonial/client-2.png" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/client-2.png') }}" alt="img">
                                     </div>
                                     <div class="text">
                                         <h4>Wade Warren</h4>
@@ -1445,7 +1445,7 @@
                                     </div>
                                 </div>
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
                                         viewBox="0 0 45 45" fill="none">
                                         <path
                                             d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
@@ -1475,7 +1475,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="assets/img/testimonial/client-3.png" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/client-3.png') }}" alt="img">
                                     </div>
                                     <div class="text">
                                         <h4>Brooklyn Simmons</h4>
@@ -1483,7 +1483,7 @@
                                     </div>
                                 </div>
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
                                         viewBox="0 0 45 45" fill="none">
                                         <path
                                             d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
@@ -1508,7 +1508,7 @@
 
 <!-- Choose-us-section Start -->
 <section class="choose-us-section section-padding bg-cover fix"
-    style="background-image: url('assets/img/choose-us-bg-2.jpg');">
+    style="background-image: url('{{ asset('assets/img/choose-us-bg-2.jpg') }}')">
     <div class="container">
         <div class="choose-us-wrapper">
             <div class="row g-4 align-items-center">
@@ -1527,7 +1527,7 @@
                         </p>
                         <div class="choose-us-area">
                             <div class="line-shape">
-                                <img src="assets/img/line-shape2.png" alt="img">
+                                <img src="{{ asset('assets/img/line-shape2.png') }}" alt="img">
                             </div>
                             <div class="choose-us-items wow fadeInUp wow" data-wow-delay=".3s">
                                 <h3 class="number">
@@ -1573,7 +1573,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                     <div class="choose-us-thumb">
-                        <img src="assets/img/choose-us-bg.png" alt="img" class="wow img-custom-anim-left">
+                        <img src="{{ asset('assets/img/choose-us-bg.png') }}" alt="img" class="wow img-custom-anim-left">
                     </div>
                 </div>
             </div>
@@ -1584,7 +1584,7 @@
 <!-- watch-video-section Start -->
 <section class="watch-video-section section-padding fix">
     <div class="bg-shape">
-        <img src="assets/img/map-bg.png" alt="img">
+        <img src="{{ asset('assets/img/map-bg.png') }}" alt="img">
     </div>
     <div class="container">
         <div class="section-title text-center">
@@ -1602,7 +1602,7 @@
                 <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
                     <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
             </div>
-            <div class="video-image bg-cover" style="background-image: url(assets/img/video-bg.jpg);">
+            <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
                 <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
                     <i class="fa-duotone fa-play"></i>
                 </a>
@@ -1613,7 +1613,7 @@
 
 <!-- Instagram Banner Section Start -->
 <div class="instagram-banner fix section-padding bg-cover"
-    style="background-image: url(assets/img/instagram/bg.jpg);">
+    style="background-image: url('{{ asset('assets/img/instagram/bg.jpg') }}');">
     <div class="instagram-wrapper">
         <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h2>
         <div class="swiper instagram-banner-slider">
