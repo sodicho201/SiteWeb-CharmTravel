@@ -1,5 +1,5 @@
 <!-- Footer Section Start -->
-<footer class="footer-section fix bg-cover" style="background-image: url(assets/img/footer/footer-bg.jpg);">
+<footer class="footer-section fix bg-cover" style="background-image: url('{{ asset('assets/img/footer/footer-bg.jpg') }}');">
     <div class="container">
         <div class="footer-widget-wrapper-new">
             <div class="row">
