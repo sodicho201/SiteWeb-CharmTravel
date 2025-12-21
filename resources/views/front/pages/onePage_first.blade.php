@@ -61,7 +61,7 @@
     <div class="swiper hero-slider-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/03.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/04.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/04.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/03.png');"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -460,7 +460,7 @@
         <div class="service-details mt-5">
             <div class="service-detail wow img-custom-anim-left-2" id="detail-1" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -552,7 +552,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-2" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -644,7 +644,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-3" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -736,7 +736,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -828,7 +828,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-5" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -920,7 +920,7 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-6" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('assets/img/travel-bg.jpg'); border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
                         <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
                     </div>
@@ -1508,7 +1508,7 @@
 
 <!-- Choose-us-section Start -->
 <section class="choose-us-section section-padding bg-cover fix"
-    style="background-image: url('assets/img/choose-us-bg-2.jpg');">
+    style="background-image: url('{{ asset('assets/img/choose-us-bg-2.jpg') }}')">
     <div class="container">
         <div class="choose-us-wrapper">
             <div class="row g-4 align-items-center">
