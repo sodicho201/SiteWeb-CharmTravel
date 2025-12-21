@@ -14,21 +14,18 @@
                         <div class="col-lg-8">
                             <div class="hero-content">
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Booking Now
+                                    Services internationaux
                                 </div>
                                 <h1 data-animation="fadeInUp" data-delay="1.4s">
-                                    Lifelong Memories Just <br>
-                                    A Few Days Away
+                                     Voyagez, expédiez <br>en toute confiance
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Making your dream to see the world come true is a thrilling and enriching goal.
-                                    Traveling allows you to experience new cultures, cuisines, landscapes, and ways
-                                    of life,
+                                    Billets d’avion, tourisme, envoi de colis et interprétariat.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Explore Flight<i
+                                    <a href="tour-details.html" class="theme-btn">Réserver un vol<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2">Book A Stay<i
+                                    <a href="tour-details.html" class="theme-btn style-2"> Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -43,21 +40,18 @@
                         <div class="col-lg-8">
                             <div class="hero-content">
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Booking Now
+                                    Expédition internationale
                                 </div>
                                 <h1 data-animation="fadeInUp" data-delay="1.4s">
-                                    Lifelong Memories Just <br>
-                                    A Few Days Away
+                                   Le monde <br>à votre portée
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Making your dream to see the world come true is a thrilling and enriching goal.
-                                    Traveling allows you to experience new cultures, cuisines, landscapes, and ways
-                                    of life,
+                                    Envoi rapide et sécurisé à l’international.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Explore Flight<i
+                                    <a href="tour-details.html" class="theme-btn">Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2">Book A Stay<i
+                                    <a href="tour-details.html" class="theme-btn style-2">Suivre un envoi<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -72,21 +66,18 @@
                         <div class="col-lg-8">
                             <div class="hero-content">
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Booking Now
+                                    Assistance linguistique
                                 </div>
                                 <h1 data-animation="fadeInUp" data-delay="1.4s">
-                                    Lifelong Memories Just <br>
-                                    A Few Days Away
+                                     Communiquez <br>sans barrières
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Making your dream to see the world come true is a thrilling and enriching goal.
-                                    Traveling allows you to experience new cultures, cuisines, landscapes, and ways
-                                    of life,
+                                    Services d’interprétariat professionnel.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Explore Flight<i
+                                    <a href="tour-details.html" class="theme-btn">Demander un interprète<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2">Book A Stay<i
+                                    <a href="tour-details.html" class="theme-btn style-2">Nous contacter<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -112,7 +103,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            A Lot of Discount
+                            Offres spéciales
                         </h3>
                     </div>
                 </div>
@@ -124,7 +115,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Best Guide
+                            Guides expérimentés
                         </h3>
                     </div>
                 </div>
@@ -136,7 +127,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            24/7 Support
+                            Support 24/7
                         </h3>
                     </div>
                 </div>
@@ -148,7 +139,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Travel Management
+                            Envoi & logistique
                         </h3>
                     </div>
                 </div>
@@ -162,15 +153,15 @@
     <div class="plane-shape float-bob-y">
         <img src="assets/img/destination/shape.png" alt="img">
     </div>
-    <div class="container">
+    {{-- <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">Wonderful Place For You</span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
                 Browse By Destination Category
             </h2>
         </div>
-    </div>
-    <div class="container-fluid">
+    </div> --}}
+    {{-- <div class="container-fluid">
 
         <div class="swiper category-slider">
             <div class="swiper-wrapper">
@@ -244,7 +235,7 @@
         <div class="swiper-dot4 mt-5">
             <div class="dot"></div>
         </div>
-    </div>
+    </div> --}}
 </section>
 
 <!-- About Section Start -->
@@ -258,18 +249,16 @@
                         <div class="shape-image float-bob-y">
                             <img src="assets/img/about/04.png" alt="img">
                         </div>
-                        <div class="group-image float-bob-x">
-                            <img src="assets/img/about/group.png" alt="img">
-                        </div>
+                       
                         <div class="about-image-2">
                             <img src="assets/img/about/05.jpg" alt="img" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="plane-shape">
                                 <img src="assets/img/about/plane-shape2.png" alt="img">
                             </div>
-                            <div class="circle-image">
+                            {{-- <div class="circle-image">
                                 <img src="assets/img/about/circle.png" alt="img">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -277,32 +266,33 @@
                     <div class="about-content">
                         <div class="section-title">
                             <span class="sub-title wow fadeInUp">
-                                Get About Us
+                                À propos de notre agence
                             </span>
                             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                                We're Strived Only For The
-                                Best In The World
+                                Votre partenaire de confiance <br>
+                                pour voyager et connecter le monde
                             </h2>
                         </div>
                         <p class="wow fadeInUp wow" data-wow-delay=".5s">
-                            There are many variations of passages of available, but the majority have suffered
-                            alteration in some form, by injected humour words which don't look even slightly
-                            believable injected humour words which
+                            Nous accompagnons particuliers et entreprises dans leurs déplacements, 
+                            leurs expéditions internationales et leurs projets touristiques. 
+                            Grâce à notre expertise et à un réseau de partenaires fiables, 
+                            nous vous garantissons des services rapides, sécurisés et adaptés à vos besoins.
                         </p>
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".3s">
                             <div class="about-icon-items">
                                 <div class="icon">
-                                    <img src="assets/img/about/cheak.png" alt="img">
+                                    <img src="{{ asset('assets/img/about/cheak.png') }}" alt="img">
                                 </div>
                                 <div class="content">
                                     <h5>
-                                        Easy Booking <br> System
+                                          Réservation Vols /<br> Tourisme
                                     </h5>
                                 </div>
                             </div>
                             <div class="text">
                                 <p>
-                                    Our hotel also prides itself on <br> offering exceptional services.
+                                    Vols et séjours organisés en toute simplicité.
                                 </p>
                             </div>
                         </div>
@@ -313,18 +303,18 @@
                                 </div>
                                 <div class="content">
                                     <h5>
-                                        Easy Booking <br> System
+                                        Expédition Colis /<br>Interprétariat
                                     </h5>
                                 </div>
                             </div>
                             <div class="text">
                                 <p>
-                                    Our hotel also prides itself on <br> offering exceptional services.
+                                    Expédition internationale et services d'interprétariat.
                                 </p>
                             </div>
                         </div>
-                        <a href="about.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".7s">Discover More<i
-                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                        {{-- <a href="about.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".7s">Discover More<i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a> --}}
                     </div>
                 </div>
             </div>
@@ -337,10 +327,10 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">
-                Explore Our Services
+                Découvrez nos services
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                Tailored travel experiences for every adventurer
+                Voyages, expéditions et interprétariat sur mesure
             </h2>
         </div>
         <div class="row">
@@ -400,13 +390,13 @@
             <div class="col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".3s">
                 <div class="cta-items">
                     <div class="cta-text">
-                        <h2>35% OFF</h2>
+                        <h2>Expédition rapide</h2>
                         <p>
-                            Explore The World tour <br>
-                            Hotel Booking.
+                           Envoyez vos colis à l’international <br>
+                            en toute sécurité et rapidement.
                         </p>
                     </div>
-                    <a href="tour-details.html" class="theme-btn">BOOK NOW <i
+                    <a href="tour-details.html" class="theme-btn">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="assets/img/bag-shape.png" alt="img">
@@ -416,13 +406,13 @@
             <div class="col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".5s">
                 <div class="cta-items style-2">
                     <div class="cta-text">
-                        <h2>35% OFF</h2>
+                        <h2>Offre spéciale</h2>
                         <p>
-                            On Flight Ticket Grab <br>
-                            This Now.
+                           Profitez de prix exceptionnels sur <br>
+                            vos billets d’avion dès maintenant.
                         </p>
                     </div>
-                    <a href="tour-details.html" class="theme-btn">BOOK NOW <i
+                    <a href="tour-details.html" class="theme-btn">Réserver un vol <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="assets/img/plane-shape.png" alt="img">
@@ -442,14 +432,14 @@
         <div class="section-title-area justify-content-between">
             <div class="section-title">
                 <span class="sub-title wow fadeInUp">
-                    Best Recommended Places
+                    Destinations incontournables
                 </span>
                 <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                    Popular Destination we offer for all
+                    Nos destinations populaires
                 </h2>
             </div>
-            <a href="tour-details.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">View All Tour<i
-                    class="fa-sharp fa-regular fa-arrow-right"></i></a>
+            {{-- <a href="tour-details.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Voir Plus<i
+                    class="fa-sharp fa-regular fa-arrow-right"></i></a> --}}
         </div>
         <div class="row">
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
@@ -464,7 +454,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
+                                Bénin
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -475,13 +465,13 @@
                         </ul>
                         <h5>
                             <a href="tour-details.html">
-                                Brooklyn Beach Resort Tour
+                                Bénin Tour
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Days
+                                10 Jours
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -489,8 +479,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
+                            <h6>$59.00<span>/Par jour</span></h6>
+                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -508,7 +498,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
+                                Caraïbes
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -519,13 +509,13 @@
                         </ul>
                         <h5>
                             <a href="tour-details.html">
-                                Pak Chumphon Town Tour
+                                Craïbes Tour
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Days
+                                10 Jours
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -533,8 +523,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
+                            <h6>$59.00<span>/Par jour</span></h6>
+                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -552,7 +542,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
+                                Brésil
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -563,13 +553,13 @@
                         </ul>
                         <h5>
                             <a href="tour-details.html">
-                                Java & Bali One Life Adventure
+                                Brésil Tour
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Days
+                                10 Jours
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -577,8 +567,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
+                            <h6>$59.00<span>/Par jour</span></h6>
+                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -596,7 +586,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
+                                Bénin
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -607,13 +597,13 @@
                         </ul>
                         <h5>
                             <a href="tour-details.html">
-                                Places To Travel In November
+                                Vodoun Days
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Days
+                                5 Jours
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -621,189 +611,14 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
+                            <h6>$59.00<span>/Par jour</span></h6>
+                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
-                <div class="destination-card-items">
-                    <div class="destination-image">
-                        <img src="assets/img/destination/05.jpg" alt="img">
-                        <div class="heart-icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <ul class="meta">
-                            <li>
-                                <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
-                            </li>
-                            <li class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p>4.7</p>
-                            </li>
-                        </ul>
-                        <h5>
-                            <a href="tour-details.html">
-                                Brooklyn Beach Resort Tour
-                            </a>
-                        </h5>
-                        <ul class="info">
-                            <li>
-                                <i class="fa-regular fa-clock"></i>
-                                10 Days
-                            </li>
-                            <li>
-                                <i class="fa-thin fa-users"></i>
-                                50+
-                            </li>
-                        </ul>
-                        <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
-                                    class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
-                <div class="destination-card-items">
-                    <div class="destination-image">
-                        <img src="assets/img/destination/06.jpg" alt="img">
-                        <div class="heart-icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <ul class="meta">
-                            <li>
-                                <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
-                            </li>
-                            <li class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p>4.7</p>
-                            </li>
-                        </ul>
-                        <h5>
-                            <a href="tour-details.html">
-                                Pak Chumphon Town Tour
-                            </a>
-                        </h5>
-                        <ul class="info">
-                            <li>
-                                <i class="fa-regular fa-clock"></i>
-                                10 Days
-                            </li>
-                            <li>
-                                <i class="fa-thin fa-users"></i>
-                                50+
-                            </li>
-                        </ul>
-                        <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
-                                    class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
-                <div class="destination-card-items">
-                    <div class="destination-image">
-                        <img src="assets/img/destination/07.jpg" alt="img">
-                        <div class="heart-icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <ul class="meta">
-                            <li>
-                                <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
-                            </li>
-                            <li class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p>4.7</p>
-                            </li>
-                        </ul>
-                        <h5>
-                            <a href="tour-details.html">
-                                Brooklyn Beach Resort Tour
-                            </a>
-                        </h5>
-                        <ul class="info">
-                            <li>
-                                <i class="fa-regular fa-clock"></i>
-                                10 Days
-                            </li>
-                            <li>
-                                <i class="fa-thin fa-users"></i>
-                                50+
-                            </li>
-                        </ul>
-                        <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
-                                    class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
-                <div class="destination-card-items">
-                    <div class="destination-image">
-                        <img src="assets/img/destination/08.jpg" alt="img">
-                        <div class="heart-icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <ul class="meta">
-                            <li>
-                                <i class="fa-thin fa-location-dot"></i>
-                                Indonesia
-                            </li>
-                            <li class="rating">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p>4.7</p>
-                            </li>
-                        </ul>
-                        <h5>
-                            <a href="tour-details.html">
-                                Java & Bali One Life Adventure
-                            </a>
-                        </h5>
-                        <ul class="info">
-                            <li>
-                                <i class="fa-regular fa-clock"></i>
-                                10 Days
-                            </li>
-                            <li>
-                                <i class="fa-thin fa-users"></i>
-                                50+
-                            </li>
-                        </ul>
-                        <div class="price">
-                            <h6>$59.00<span>/Per day</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Book Now<i
-                                    class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -815,10 +630,10 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="price-items">
-                    <div class="price-image wow fadeInUp wow" data-wow-delay=".2s">
+                    {{-- <div class="price-image wow fadeInUp wow" data-wow-delay=".2s">
                         <img src="assets/img/offer/price.png" alt="img">
-                    </div>
-                    <div class="coming-soon-timer">
+                    </div> --}}
+                    {{-- <div class="coming-soon-timer">
                         <div class="timer-content wow fadeInUp" data-wow-delay=".2s">
                             <h2 id="day">00</h2>
                             <p>Days</p>
@@ -835,17 +650,17 @@
                             <h2 id="sec">00</h2>
                             <p>Secound</p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="section-title-area">
                     <div class="section-title">
                         <span class="sub-title text-white wow fadeInUp">
-                            Deals & Offers
+                            Offres & Promotions
                         </span>
                         <h2 class="text-white wow fadeInUp wow" data-wow-delay=".3s">
-                            Incredible Last-Minute Offers
+                            Offres de dernière minute pour vos voyages et envois
                         </h2>
                     </div>
                     <div class="array-button justify-content-center wow fadeInUp wow" data-wow-delay=".5s">
@@ -859,90 +674,53 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="assets/img/offer/01.jpg" alt="img">
-                                        <div class="offer-content">
-                                            <ul class="offer-btn">
-                                                <li>-50% Off</li>
-                                                <li class="bg-color">Featured</li>
-                                            </ul>
-                                            <div class="content">
-                                                <h3>
-                                                    <a href="tour-details.html">
-                                                        Nepal City
-                                                    </a>
-                                                </h3>
-                                                <span>
-                                                    $160
-                                                </span>
-                                            </div>
-                                        </div>
+                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        
                                     </div>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="assets/img/offer/02.jpg" alt="img">
-                                        <div class="offer-content">
-                                            <ul class="offer-btn">
-                                                <li>-50% Off</li>
-                                            </ul>
-                                            <div class="content">
-                                                <h3>
-                                                    <a href="tour-details.html">
-                                                        Mishor
-                                                    </a>
-                                                </h3>
-                                                <span>
-                                                    $160
-                                                </span>
-                                            </div>
-                                        </div>
+                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                        
                                     </div>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="assets/img/offer/03.jpg" alt="img">
-                                        <div class="offer-content">
-                                            <ul class="offer-btn">
-                                                <li>-50% Off</li>
-                                                <li class="bg-color">Featured</li>
-                                            </ul>
-                                            <div class="content">
-                                                <h3>
-                                                    <a href="tour-details.html">
-                                                        China City
-                                                    </a>
-                                                </h3>
-                                                <span>
-                                                    $160
-                                                </span>
-                                            </div>
-                                        </div>
+                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        
                                     </div>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="assets/img/offer/04.jpg" alt="img">
-                                        <div class="offer-content">
-                                            <ul class="offer-btn">
-                                                <li>-50% Off</li>
-                                            </ul>
-                                            <div class="content">
-                                                <h3>
-                                                    <a href="tour-details.html">
-                                                        New York City
-                                                    </a>
-                                                </h3>
-                                                <span>
-                                                    $160
-                                                </span>
-                                            </div>
-                                        </div>
+                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="offer-items">
+                                    <div class="offer-image">
+                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="offer-items">
+                                    <div class="offer-image">
+                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -965,7 +743,7 @@
                 Testimonial
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                Our Clients Feedback
+                Témoignages de nos clients satisfaits
             </h2>
         </div>
         <div class="testimonial-wrapper">
@@ -1087,8 +865,8 @@
                     </div>
                 </div>
                 <div class="array-button">
-                    <button class="array-prevs">Previews</button>
-                    <button class="array-nexts">Next</button>
+                    <button class="array-prevs">Précédent</button>
+                    <button class="array-nexts">Suivant</button>
                 </div>
             </div>
         </div>
@@ -1199,16 +977,14 @@
                     <div class="choose-us-content">
                         <div class="section-title">
                             <span class="sub-title wow fadeInUp">
-                                Why Choose Us
+                                Pourquoi nous choisir ?
                             </span>
                             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                                Get The Best Travel Experience
+                                Obtenez la meilleure expérience de voyage
                             </h2>
                         </div>
                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                            There are many variations of passages of available, but the majority have suffered
-                            alteration in <br> some form, by injected humour words which don't look even slightly
-                            believable
+                            Nous offrons des services de voyage, d’expédition et d’interprétariat fiables, rapides et personnalisés, pour que chaque expérience soit réussie.
                         </p>
                         <div class="choose-us-area">
                             <div class="line-shape">
@@ -1220,12 +996,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        Find ans enjoy a Trip that fits Your Lifestyle with <br>
-                                        your Friends
+                                        Réservation de vols
                                     </h4>
                                     <p>
-                                        Globally productize flexible potentialities via high-payoff markets.
-                                        Proactively <br> revolutionize parallel growth strategies.
+                                        Achetez vos billets d’avion rapidement et en toute sécurité.
                                     </p>
                                 </div>
                             </div>
@@ -1235,11 +1009,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        Travel With More Confidence
+                                        Services d’interprétariat
                                     </h4>
                                     <p>
-                                        Globally productize flexible potentialities via high-payoff markets.
-                                        Proactively <br> revolutionize parallel growth strategies.
+                                        Facilitez vos échanges internationaux avec nos experts linguistiques.
                                     </p>
                                 </div>
                             </div>
@@ -1249,11 +1022,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        See What you really Get form us
+                                        Expédition de colis
                                     </h4>
                                     <p>
-                                        Globally productize flexible potentialities via high-payoff markets.
-                                        Proactively <br> revolutionize parallel growth strategies.
+                                       Envoyez vos colis à l’international rapidement et en toute sécurité.
                                     </p>
                                 </div>
                             </div>
@@ -1278,19 +1050,18 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">
-                Watch Our Story
+                Découvrez-nous
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                Unforgettable Travel Experiences <br>
-                Get Your Guide
+                 Des expériences <br>inoubliables
             </h2>
         </div>
         <div class="video-wrapper">
             <div class="watch-button">
-                <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contact Us<i
+                <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contactez-nous<i
                         class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Book
-                    Now<i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
+                    <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
             </div>
             <div class="video-image bg-cover" style="background-image: url(assets/img/video-bg.jpg);">
                 <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
@@ -1308,10 +1079,11 @@
         <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h2>
         <div class="swiper instagram-banner-slider">
             <div class="swiper-wrapper">
+    
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/01.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1321,7 +1093,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/02.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1331,7 +1103,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/03.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1341,7 +1113,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/04.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1351,7 +1123,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/05.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1361,13 +1133,14 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="assets/img/instagram/06.jpg" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
                             <a href="index.html" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+              
             </div>
         </div>
     </div>

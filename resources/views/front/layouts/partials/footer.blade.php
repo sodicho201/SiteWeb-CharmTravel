@@ -7,16 +7,16 @@
                     <div class="single-widget-items text-center">
                         <div class="widget-head">
                             <a href="index.html">
-                                <img src="{{ asset('assets/img/logo/white-log.svg') }}" alt="img">
+                                <img src="{{ asset('assets/img/logo/logo-principal-1.png') }}" alt="img">
                             </a>
                         </div>
                         <div class="footer-content">
-                            <h3>Subscribe Newsletter</h3>
-                            <p>Get Our Latest Deals and Update</p>
+                            <h3>Abonnez-vous à notre newsletter</h3>
+                            <p>Recevez nos dernières offres et nouveautés directement dans votre boîte mail.</p>
                             <div class="footer-input">
-                                <input type="email" id="email2" placeholder="Your email address">
+                                <input type="email" id="email2" placeholder="Votre adresse e-mail">
                                 <button class="newsletter-btn theme-btn" type="submit">
-                                    Subscribe <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                    S'abonner <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                 </button>
                             </div>
                             <div class="social-icon d-flex align-items-center justify-content-center">
@@ -31,32 +31,32 @@
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".4s">
                     <div class="single-widget-items">
                         <div class="widget-head">
-                            <h4>Quick Links</h4>
+                            <h4>Liens rapides</h4>
                         </div>
                         <ul class="list-items">
                             <li>
                                 <a href="index.html">
-                                    Home
+                                    Accueil
                                 </a>
                             </li>
                             <li>
                                 <a href="index.html">
-                                    About Us
+                                    À propos
                                 </a>
                             </li>
                             <li>
                                 <a href="news.html">
-                                    Blog
+                                    Service
                                 </a>
                             </li>
                             <li>
                                 <a href="tour-details.html">
-                                    Services
+                                    Destinations
                                 </a>
                             </li>
                             <li>
                                 <a href="tour-details.html">
-                                    Tour
+                                    Témoignages
                                 </a>
                             </li>
                         </ul>
@@ -70,36 +70,32 @@
                         <ul class="list-items">
                             <li>
                                 <a href="tour-details.html">
-                                    Wanderlust Adventures
+                                    CHARM TRAVELS
                                 </a>
                             </li>
                             <li>
                                 <a href="tour-details.html">
-                                    Globe Trotters Travel
+                                    CHARM CONNECT
                                 </a>
                             </li>
                             <li>
                                 <a href="tour-details.html">
-                                    Odyssey Travel Services
+                                    CHARM INTERVOX
                                 </a>
                             </li>
                             <li>
                                 <a href="tour-details.html">
-                                    Jet Set Journeys
+                                    BENIN RAIZ
                                 </a>
                             </li>
-                            <li>
-                                <a href="tour-details.html">
-                                    Dream Destinations Travel
-                                </a>
-                            </li>
+                          
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ps-xl-5 wow fadeInUp wow" data-wow-delay=".6s">
                     <div class="single-widget-items">
                         <div class="widget-head">
-                            <h4>Contact Us</h4>
+                            <h4>Contactez -nous</h4>
                         </div>
                         <div class="contact-info">
                             <div class="contact-items">
@@ -107,8 +103,8 @@
                                     <i class="fa-regular fa-location-dot"></i>
                                 </div>
                                 <div class="content">
-                                    <h6>9550 Bolsa Ave #126, <br>
-                                        United States
+                                    <h6>Carrefour Adjaha, <br>
+                                        Cotonou
                                     </h6>
                                 </div>
                             </div>
@@ -118,7 +114,7 @@
                                 </div>
                                 <div class="content">
                                     <h6>
-                                        <a href="mailto:info@touron.com">info@touron.com</a>
+                                        <a href="mailto:info@charmbusiness.com">info@charmbusiness.com</a>
                                     </h6>
                                 </div>
                             </div>
@@ -128,8 +124,14 @@
                                 </div>
                                 <div class="content">
                                     <h6>
-                                        <a href="tel:+256214203215">+256 214 203 215</a> <br>
-                                        <a href="tel:+10987654321">+1 098 765 4321</a>
+                                       <a href="https://wa.me/5587996351488" target="_blank">
+                                            +55 879 963 514 88
+                                        </a>
+                                        <br>
+                                        <a href="https://wa.me/2290169292980" target="_blank">
+                                            +229 01 692 929 80
+                                        </a>
+
                                     </h6>
                                 </div>
                             </div>
