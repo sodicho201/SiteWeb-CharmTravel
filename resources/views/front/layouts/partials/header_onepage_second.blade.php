@@ -5,23 +5,23 @@
         </div>
         <div class="txt-loading">
             <span data-text-preloader="T" class="letters-loading">
-                T
+                C
             </span>
             <span data-text-preloader="U" class="letters-loading">
-                U
+                H
             </span>
             <span data-text-preloader="R" class="letters-loading">
-                R
+                A
             </span>
             <span data-text-preloader="M" class="letters-loading">
-                M
+                R
             </span>
             <span data-text-preloader="E" class="letters-loading">
-                E
+                M
             </span>
-            <span data-text-preloader="T" class="letters-loading">
+            {{-- <span data-text-preloader="T" class="letters-loading">
                 T
-            </span>
+            </span> --}}
         </div>
         <p class="text-center">Loading</p>
     </div>
@@ -60,7 +60,7 @@
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
                         <a href="index.html">
-                            <img src="{{ asset('assets/img/logo/black-logo.svg') }}" alt="logo-img">
+                            <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                         </a>
                     </div>
                     <div class="offcanvas__close">
@@ -135,10 +135,10 @@
             <div class="header-main">
                 <div class="logo">
                     <a href="index.html" class="header-logo">
-                        <img src="{{ asset('assets/img/logo/black-logo.svg') }}" alt="logo-img">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                     </a>
                     <a href="index.html" class="header-logo-2">
-                        <img src="{{ asset('assets/img/logo/white-logo.svg') }}" alt="logo-img">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                     </a>
                 </div>
                 <div class="mean__menu-wrapper">
@@ -149,19 +149,19 @@
                                     <a href="{{ route('home') }}">Home</a>
                                 </li>
                                 <li class="active d-xl-none">
-                                    <a href="{{ route('home') }}">Home</a>
+                                    <a href="{{ route('home') }}">Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="#about">About Us</a>
+                                    <a href="#about">A propos</a>
                                 </li>
                                 <li>
-                                    <a href="#service">Service</a>
+                                    <a href="#service">Services</a>
                                 </li>
                                 <li>
                                     <a href="#destination">Destination</a>
                                 </li>
                                 <li>
-                                    <a href="#testimonial">Testimonial</a>
+                                    <a href="#testimonial">Témoignages</a>
                                 </li>
                             </ul>
                         </nav>

@@ -13,8 +13,10 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #1CA8CB;
-  --theme-2: #113D48;
+  --theme: #e7a73f;
+  /* --theme: #1CA8CB; */
+  --theme-2: #2b6ab9;
+  /* --theme-2: #113D48; */
   --header: #0A1F24;
   --text: #687179;
   --border: #E1E4E5;
@@ -148,7 +150,7 @@ h6 {
   color: var(--header);
   text-transform: initial;
   transition: all 0.4s ease-in-out;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 h1 {
@@ -1475,7 +1477,7 @@ span {
   border-radius: 100px;
   color: #727171;
   line-height: 1;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 @media (max-width: 991px) {
   .footer-newsletter-wrapper .newsletter-input .footer-input input {
@@ -1832,8 +1834,9 @@ span {
   position: relative;
 }
 .instagram-wrapper .instagram-banner-items .banner-image img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  width: 250px;height: 200px;object-fit: cover;
   border-radius: 16px;
 }
 .instagram-wrapper .instagram-banner-items .banner-image::before {
@@ -2801,8 +2804,8 @@ span {
 }
 .destination-card-items .destination-content .price .theme-btn.style-2 {
   border-radius: 100px;
-  background: rgba(2, 165, 206, 0.1);
-  color: var(--theme);
+  background: var(--theme-2);
+  color: white;
   padding: 10px 20px;
   min-width: 140px;
 }
@@ -4995,7 +4998,7 @@ span {
   border-radius: 100px;
   color: #727171;
   line-height: 1;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 20px;
 }
 @media (max-width: 991px) {
@@ -5034,7 +5037,7 @@ span {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  color: var(--theme);
+  color: var(--theme-2);
   background-color: var(--white);
   transition: all 0.4s ease-in-out;
 }
@@ -5086,6 +5089,7 @@ span {
   text-align: center;
   color: var(--header);
   background-color: var(--theme);
+    flex: 0 0 40px;       /* largeur fixe pour l’icône */
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .icon i {
   font-size: 18px;
@@ -5097,6 +5101,7 @@ span {
 }
 .footer-widget-wrapper-new .single-widget-items .contact-info .contact-items .content h6 a {
   color: var(--white);
+  /* word-break: break-all; */
 }
 
 .footer-bottom {
