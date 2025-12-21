@@ -302,7 +302,7 @@
                         <div class="shape-image float-bob-y">
                             <img src="assets/img/about/04.png" alt="img">
                         </div>
-                       
+
                         <div class="about-image-2">
                             <img src="assets/img/about/05.jpg" alt="img" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
@@ -327,9 +327,9 @@
                             </h2>
                         </div>
                         <p class="wow fadeInUp wow" data-wow-delay=".5s">
-                            Nous accompagnons particuliers et entreprises dans leurs déplacements, 
-                            leurs expéditions internationales et leurs projets touristiques. 
-                            Grâce à notre expertise et à un réseau de partenaires fiables, 
+                            Nous accompagnons particuliers et entreprises dans leurs déplacements,
+                            leurs expéditions internationales et leurs projets touristiques.
+                            Grâce à notre expertise et à un réseau de partenaires fiables,
                             nous vous garantissons des services rapides, sécurisés et adaptés à vos besoins.
                         </p>
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".3s">
@@ -1251,7 +1251,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </section>
@@ -1308,7 +1308,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1317,7 +1317,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1326,7 +1326,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1335,7 +1335,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -1344,7 +1344,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1353,7 +1353,7 @@
                                 <div class="offer-items">
                                     <div class="offer-image">
                                         <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1618,12 +1618,12 @@
         <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h2>
         <div class="swiper instagram-banner-slider">
             <div class="swiper-wrapper">
-    
+
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1633,7 +1633,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1643,7 +1643,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1653,7 +1653,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1663,7 +1663,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1673,13 +1673,13 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="index.html" class="icon">
+                            <a href="{{ route('home') }}" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-              
+
             </div>
         </div>
     </div>

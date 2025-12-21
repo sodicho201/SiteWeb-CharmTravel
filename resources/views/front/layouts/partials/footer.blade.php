@@ -6,8 +6,8 @@
                 <div class="col-xl-4 col-lg-5 col-md-8 col-sm-6 wow fadeInUp wow" data-wow-delay=".2s">
                     <div class="single-widget-items text-center">
                         <div class="widget-head">
-                            <a href="index.html">
-                                <img src="{{ asset('assets/img/logo/logo-principal-1.png') }}" alt="img">
+                            <a href="{{ route('home') }}">
+                                <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="img">
                             </a>
                         </div>
                         <div class="footer-content">
@@ -44,27 +44,27 @@
                         </div>
                         <ul class="list-items">
                             <li>
-                                <a href="index.html">
+                                <a href="{{ route('home') }}">
                                     Accueil
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html">
+                                <a href="{{ route('home') }}">
                                     À propos
                                 </a>
                             </li>
                             <li>
-                                <a href="news.html">
+                                <a href="{{ route('home') }}">
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     Destinations
                                 </a>
                             </li>
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     Témoignages
                                 </a>
                             </li>
@@ -97,7 +97,7 @@
                                     BENIN RAIZ
                                 </a>
                             </li>
-                          
+
                         </ul>
                     </div>
                 </div>
