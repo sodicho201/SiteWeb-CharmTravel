@@ -19,12 +19,21 @@
                                     S'abonner <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                 </button>
                             </div>
-                            <div class="social-icon d-flex align-items-center justify-content-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                           <div class="social-icon d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/CharmTravelsAgence&Business" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            {{-- <a href="https://twitter.com/nomdecompte" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nomdeprofil" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a> --}}
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -46,7 +55,7 @@
                             </li>
                             <li>
                                 <a href="news.html">
-                                    Service
+                                    Services
                                 </a>
                             </li>
                             <li>
@@ -143,12 +152,12 @@
         <div class="footer-bottom">
             <div class="footer-wrapper">
                 <p class="wow fadeInUp" data-wow-delay=".3s">
-                    Copyright © <span>Turmet,</span> All Rights Reserved.
+                    Copyright © <span>CHARM AGENCE & BUSINESS,</span> Tous droits réservés.
                 </p>
-                <ul class="bottom-list wow fadeInUp" data-wow-delay=".5s">
+                {{-- <ul class="bottom-list wow fadeInUp" data-wow-delay=".5s">
                     <li>Terms of use</li>
                     <li>Privacy Environmental Policy</li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
     </div>
