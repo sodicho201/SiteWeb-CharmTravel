@@ -1,9 +1,9 @@
 /*
-Theme Name: Turmet 
+Theme Name: Turmet
 Author: pixel-drop
 Author URI: https://themeforest.net/user/pixel-drop/portfolio
 Description: Turmet - Travel & Tour Agency HTML Template
-Service Html Template 
+Service Html Template
 Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
@@ -1145,6 +1145,10 @@ span {
 }
 .img-custom-anim-left {
   animation: img-anim-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+.img-custom-anim-left-2 {
+  animation: img-anim-left 0.9s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
   opacity: 0;
 }
 

@@ -2,6 +2,59 @@
 
 @section('title', 'Accueil - CharmTravel')
 
+@section('css')
+<style>
+    .news-card-items {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .news-image {
+        position: relative;
+    }
+
+    .news-image img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
+
+    .news-card-items:hover .news-image img {
+        transform: scale(1.1); /* Zoom au survol */
+    }
+
+    /* Overlay sombre */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* transparent par défaut */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+    }
+
+    .news-card-items:hover .overlay {
+        background: rgba(0, 0, 0, 0.3); /* foncé au survol */
+    }
+
+    .service-name {
+        color: #fff;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: 'Manrop', sans-serif;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0,0,0,0.7);
+        z-index: 10;
+    }
+</style>
+@endsection
+
 @section('content')
 <!-- Hero section start -->
 <section class="hero-section hero-3">
@@ -160,7 +213,7 @@
 <!-- Destination-category Section Start -->
 <section class="destination-category-section section-padding pt-0" id="destination">
     <div class="plane-shape float-bob-y">
-        <img src="assets/img/destination/shape.png" alt="img">
+        <img src="assets/img/destination/shape.png" alt="img" style="width: 100%">
     </div>
     <div class="container">
         <div class="section-title text-center">
@@ -343,46 +396,626 @@
                 Tailored travel experiences for every adventurer
             </h2>
         </div>
+
+        <!-- Cartes des services -->
         <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".3s">
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="1">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/01.jpg" alt="img">
+                        <img src="assets/img/news/01.jpg" alt="Service 1">
+                        <div class="overlay">
+                            <div class="service-name">Adventure Tours</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="2">
+                <div class="news-card-items">
+                    <div class="news-image">
+                        <img src="assets/img/news/02.jpg" alt="Service 2">
+                        <div class="overlay">
+                            <div class="service-name">Luxury Cruises</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="3">
+                <div class="news-card-items">
+                    <div class="news-image">
+                        <img src="assets/img/news/02.jpg" alt="Service 3">
+                        <div class="overlay">
+                            <div class="service-name">Luxury Cruises</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".3s" data-service="4">
+                <div class="news-card-items">
+                    <div class="news-image">
+                        <img src="assets/img/news/01.jpg" alt="Service 4">
+                        <div class="overlay">
+                            <div class="service-name">Adventure Tours</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".5s" data-service="5">
+                <div class="news-card-items">
+                    <div class="news-image">
+                        <img src="assets/img/news/02.jpg" alt="Service 5">
+                        <div class="overlay">
+                            <div class="service-name">Luxury Cruises</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp service-card" data-wow-delay=".7s" data-service="6">
+                <div class="news-card-items">
+                    <div class="news-image">
+                        <img src="assets/img/news/02.jpg" alt="Service 6">
+                        <div class="overlay">
+                            <div class="service-name">Luxury Cruises</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Détails des services (cachés par défaut) -->
+        <div class="service-details mt-5">
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-1" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".7s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="img">
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-2" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".5s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="img">
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-3" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".3s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/01.jpg" alt="img">
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".7s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="img">
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-5" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".5s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/02.jpg" alt="img">
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-6" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('assets/img/travel-bg.jpg');">
+                    <div class="shape-1 float-bob-y">
+                        <img src="assets/img/plane-shape1.png" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="assets/img/plane-shape2.png" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span>
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                World Leading Online Tour Booking Platform
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="assets/img/line-shape.png" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/08.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="assets/img/icon/09.svg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">
+                                            Contact US<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left">
+                                        <img src="assets/img/man-image.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -391,7 +1024,7 @@
 </section>
 
 <!-- Cta Section Start -->
-<section class="cta-section section-padding">
+<section class="cta-section section-padding pt-0">
     <div class="mobile-shape">
         <img src="assets/img/mobile.png" alt="img">
     </div>
@@ -1095,100 +1728,6 @@
     </div>
 </section>
 
-<!-- Travel-Feature-Section Start -->
-{{-- <section class="travel-feature-section section-padding fix"
-    style="background-image: url('assets/img/travel-bg.jpg');">
-    <div class="shape-1 float-bob-y">
-        <img src="assets/img/plane-shape1.png" alt="img">
-    </div>
-    <div class="shape-2 float-bob-x">
-        <img src="assets/img/plane-shape2.png" alt="img">
-    </div>
-    <div class="container">
-        <div class="feature-wrapper">
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="feature-content">
-                        <div class="section-title">
-                            <span class="sub-title wow fadeInUp">
-                                Are you ready to travel?
-                            </span>
-                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                                World Leading Online Tour Booking Platform
-                            </h2>
-                        </div>
-                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words which don't
-                            look even slightly believable.
-                        </p>
-                        <div class="feature-area">
-                            <div class="line-shape">
-                                <img src="assets/img/line-shape.png" alt="img">
-                            </div>
-                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
-                                <div class="feature-icon-item">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/08.svg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>
-                                            Most Adventure <Br>
-                                            Tour Ever
-                                        </h5>
-                                    </div>
-                                </div>
-                                <ul class="circle-icon">
-                                    <li>
-                                        <i class="fa-solid fa-badge-check"></i>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            There are many variations of <br>
-                                            passages of available,
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
-                                <div class="feature-icon-item">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/09.svg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>
-                                            Real Tour Starts <br>
-                                            from Here
-                                        </h5>
-                                    </div>
-                                </div>
-                                <ul class="circle-icon">
-                                    <li>
-                                        <i class="fa-solid fa-badge-check"></i>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            There are many variations of <br>
-                                            passages of available,
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".9s">Contact US<i
-                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="feature-image wow img-custom-anim-left">
-                        <img src="assets/img/man-image.png" alt="img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
 <!-- Choose-us-section Start -->
 <section class="choose-us-section section-padding bg-cover fix"
     style="background-image: url('assets/img/choose-us-bg-2.jpg');">
@@ -1372,4 +1911,26 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<script>
+    $(document).ready(function() {
+        $('.service-card').on('click', function() {
+            var serviceId = $(this).data('service');
+
+            // cacher tous les détails
+            $('.service-detail').slideUp(0); // instant pour cacher
+
+            // afficher le détail correspondant
+            var $detail = $('#detail-' + serviceId);
+            $detail.slideDown(0, function() {
+                // une fois l'animation terminée, faire défiler jusqu'au détail
+                $('html, body').animate({
+                    scrollTop: $detail.offset().top - 100
+                }, 100);
+            });
+        });
+    });
+</script>
 @endsection
