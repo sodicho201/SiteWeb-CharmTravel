@@ -1258,7 +1258,7 @@
 
 <!-- Deals-offer Section Start -->
 <section class="deals-offer-section section-padding fix bg-cover"
-    style="background-image: url(assets/img/offer/bg.jpg);">
+    style="background-image: url('{{ asset('assets/img/offer/bg.jpg') }}');">
     <div class="deals-offer-wrapper">
         <div class="row g-4">
             <div class="col-lg-4">
