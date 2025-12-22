@@ -1832,11 +1832,13 @@ span {
 }
 .instagram-wrapper .instagram-banner-items .banner-image {
   position: relative;
+  height: 200px;
 }
 .instagram-wrapper .instagram-banner-items .banner-image img {
   width: 100%;
   height: 100%;
   border-radius: 16px;
+  object-fit: cover;
 }
 .instagram-wrapper .instagram-banner-items .banner-image::before {
   position: absolute;
@@ -5283,6 +5285,15 @@ span {
 .header-1.header-3::before {
   display: none;
 }
+.header-1.header-3 .header-main .logo {
+  height: 80px;
+}
+.header-1.header-3 .header-main .logo a {
+  height: 100%;
+}
+.header-1.header-3 .header-main .logo a img {
+  height: 100%;
+}
 .header-1.header-3 .header-main .main-menu ul li a {
   color: var(--white);
 }
@@ -5886,7 +5897,8 @@ span {
   color: var(--white);
 }
 .offcanvas__wrapper .offcanvas__logo {
-  width: 170px;
+  width: 130px;
+  height: 60px;
 }
 .offcanvas__wrapper .offcanvas__logo img {
   width: 100%;

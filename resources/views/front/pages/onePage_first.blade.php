@@ -83,9 +83,9 @@
                                     Billets d’avion, tourisme, envoi de colis et interprétariat.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Réserver un vol<i
+                                    <a href="{{ route('home') }}" class="theme-btn">Réserver un vol<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2"> Envoyer un colis<i
+                                    <a href="{{ route('home') }}" class="theme-btn style-2"> Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -109,9 +109,9 @@
                                     Envoi rapide et sécurisé à l’international.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Envoyer un colis<i
+                                    <a href="{{ route('home') }}" class="theme-btn">Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2">Suivre un envoi<i
+                                    <a href="{{ route('home') }}" class="theme-btn style-2">Suivre un envoi<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -135,9 +135,9 @@
                                     Services d’interprétariat professionnel.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="tour-details.html" class="theme-btn">Demander un interprète<i
+                                    <a href="{{ route('home') }}" class="theme-btn">Demander un interprète<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="tour-details.html" class="theme-btn style-2">Nous contacter<i
+                                    <a href="{{ route('home') }}" class="theme-btn style-2">Nous contacter<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
 </section>
 
 <!-- Destination-category Section Start -->
-<section class="destination-category-section section-padding pt-0" id="destination">
+<section class="destination-category-section section-padding pt-0">
     <div class="plane-shape float-bob-y">
         <img src="{{ asset('assets/img/destination/shape.png') }}" alt="img" style="width: 100%">
     </div>
@@ -1097,7 +1097,7 @@
 </section>
 
 <!-- Cta Section Start -->
-<section class="cta-section section-padding pt-0">
+<section class="cta-section section-padding pt-0 pb-0">
     <div class="mobile-shape">
         <img src="{{ asset('assets/img/mobile.png') }}" alt="img">
     </div>
@@ -1112,7 +1112,7 @@
                             en toute sécurité et rapidement.
                         </p>
                     </div>
-                    <a href="tour-details.html" class="theme-btn">Envoyer un colis <i
+                    <a href="{{ route('home') }}" class="theme-btn">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="{{ asset('assets/img/bag-shape.png') }}" alt="img">
@@ -1128,7 +1128,7 @@
                             vos billets d’avion dès maintenant.
                         </p>
                     </div>
-                    <a href="tour-details.html" class="theme-btn">Réserver un vol <i
+                    <a href="{{ route('home') }}" class="theme-btn">Réserver un vol <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="{{ asset('assets/img/plane-shape.png') }}" alt="img">
@@ -1140,7 +1140,7 @@
 </section>
 
 <!-- Popular-destination Section Start -->
-<section class="popular-destination-section section-padding pt-0" id="destination">
+<section class="popular-destination-section section-padding" id="destination">
     <div class="car-shape float-bob-x">
         <img src="{{ asset('assets/img/destination/car.png') }}" alt="img">
     </div>
@@ -1154,7 +1154,7 @@
                     Nos destinations populaires
                 </h2>
             </div>
-            {{-- <a href="tour-details.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Voir Plus<i
+            {{-- <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Voir Plus<i
                     class="fa-sharp fa-regular fa-arrow-right"></i></a> --}}
         </div>
         <div class="row">
@@ -1180,7 +1180,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="tour-details.html">
+                            <a href="{{ route('home') }}">
                                 Bénin Tour
                             </a>
                         </h5>
@@ -1196,7 +1196,7 @@
                         </ul>
                         <div class="price">
                             <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
+                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1224,7 +1224,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="tour-details.html">
+                            <a href="{{ route('home') }}">
                                 Craïbes Tour
                             </a>
                         </h5>
@@ -1240,7 +1240,7 @@
                         </ul>
                         <div class="price">
                             <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
+                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1268,7 +1268,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="tour-details.html">
+                            <a href="{{ route('home') }}">
                                 Brésil Tour
                             </a>
                         </h5>
@@ -1284,7 +1284,7 @@
                         </ul>
                         <div class="price">
                             <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
+                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1312,7 +1312,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="tour-details.html">
+                            <a href="{{ route('home') }}">
                                 Vodoun Days
                             </a>
                         </h5>
@@ -1328,7 +1328,7 @@
                         </ul>
                         <div class="price">
                             <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="tour-details.html" class="theme-btn style-2">Réserver maintenant<i
+                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1680,9 +1680,9 @@
         </div>
         <div class="video-wrapper">
             <div class="watch-button">
-                <a href="contact.html" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contactez-nous<i
+                <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contactez-nous<i
                         class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                <a href="tour-details.html" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
+                <a href="{{ route('home') }}" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
                     <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
             </div>
             <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
@@ -1706,7 +1706,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1716,7 +1716,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1726,7 +1726,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1736,7 +1736,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1746,7 +1746,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -1756,7 +1756,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
-                            <a href="{{ route('home') }}" class="icon">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>

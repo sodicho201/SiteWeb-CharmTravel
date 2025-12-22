@@ -78,22 +78,22 @@
                         </div>
                         <ul class="list-items">
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     CHARM TRAVELS
                                 </a>
                             </li>
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     CHARM CONNECT
                                 </a>
                             </li>
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     CHARM INTERVOX
                                 </a>
                             </li>
                             <li>
-                                <a href="tour-details.html">
+                                <a href="{{ route('home') }}">
                                     BENIN RAIZ
                                 </a>
                             </li>
@@ -136,11 +136,11 @@
                                        <a href="https://wa.me/5587996351488" target="_blank">
                                             +55 879 963 514 88
                                         </a>
-                                        <br>
+                                    </h6>
+                                    <h6>
                                         <a href="https://wa.me/2290169292980" target="_blank">
                                             +229 01 692 929 80
                                         </a>
-
                                     </h6>
                                 </div>
                             </div>

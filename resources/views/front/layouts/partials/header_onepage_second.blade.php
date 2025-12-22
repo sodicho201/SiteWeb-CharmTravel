@@ -76,7 +76,7 @@
             <span data-text-preloader="S" class="letters-loading">
                 S
             </span>
-           
+
         </div>
         <p class="text-center">Loading</p>
     </div>
@@ -114,7 +114,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+                        <a href="{{ route('home') }}">
                             <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                         </a>
                     </div>
@@ -125,19 +125,19 @@
                     </div>
                 </div>
                 <p class="text d-none d-xl-block">
-                    Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
-                    feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    Nous concevons des expériences de voyage inoubliables en alliant confort, découverte et aventure.
+                    Grâce à des destinations soigneusement sélectionnées et des services personnalisés, nous transformons chaque voyage en un souvenir unique.
                 </p>
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
-                    <h4>Contact Info</h4>
+                    <h4>Contactez -nous</h4>
                     <ul>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon">
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="#">Carrefour Adjaha, Cotonou</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -145,36 +145,38 @@
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a href="mailto:info@example.com"><span
-                                        class="mailto:info@example.com">info@example.com</span></a>
+                                <a href="mailto:info@charmbusiness.com"><span
+                                    class="mailto:info@example.com">info@charmbusiness.com</span></a>
                             </div>
                         </li>
-                        <li class="d-flex align-items-center">
+                        {{-- <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon mr-15">
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="offcanvas__contact-text">
                                 <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
                             </div>
-                        </li>
+                        </li> --}}
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon mr-15">
                                 <i class="far fa-phone"></i>
                             </div>
-                            <div class="offcanvas__contact-text">
-                                <a href="tel:+11002345909">+11002345909</a>
+                            <div class="offcanvas__contact-text d-flex flex-column">
+                                <a href="https://wa.me/5587996351488" target="_blank">+55 879 963 514 88</a>
+                                <a href="https://wa.me/2290169292980" target="_blank">+229 01 692 929 80</a>
                             </div>
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn"> Request A Quote <i
+                        <a href="{{ route('home') }}" class="theme-btn"> Nous contacter <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     </div>
                     <div class="social-icon d-flex align-items-center">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/CharmTravelsAgence&Business" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        {{-- <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> --}}
+                        <a href="https://www.instagram.com/charm_travels_" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -189,10 +191,10 @@
         <div class="mega-menu-wrapper">
             <div class="header-main">
                 <div class="logo">
-                    <a href="index.html" class="header-logo">
+                    <a href="{{ route('home') }}" class="header-logo">
                         <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                     </a>
-                    <a href="index.html" class="header-logo-2">
+                    <a href="{{ route('home') }}" class="header-logo-2">
                         <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
                     </a>
                 </div>
@@ -223,7 +225,7 @@
                     </div>
                 </div>
                 <div class="header-right d-flex justify-content-end align-items-center">
-                    <a href="contact.html" class="theme-btn"> Request A Quote <i
+                    <a href="{{ route('home') }}" class="theme-btn"> Nous contacter <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="header__hamburger d-xl-none my-auto">
                         <div class="sidebar__toggle">
