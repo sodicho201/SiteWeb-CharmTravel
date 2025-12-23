@@ -396,7 +396,7 @@
 
         <!-- Cartes des services -->
         <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Service 1">
@@ -409,7 +409,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/services/logo_tourisme_benin.jpeg') }}" alt="Service 2">
@@ -422,13 +422,26 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
                         <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Service 3">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm Travels</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                <div class="news-card-items">
+                    <div class="news-image" style="height: 260px">
+                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Service ">
+                        <div class="overlay">
+                            {{-- <div class="service-name">Charm Travels</div> --}}
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -738,6 +751,109 @@
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
                                         <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="img" style="border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
+                <div class="travel-feature-section section-padding fix"
+                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
+                    <div class="shape-1 float-bob-y">
+                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
+                    </div>
+                    <div class="shape-2 float-bob-x">
+                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
+                    </div>
+                    <div class="container">
+                        <div class="feature-wrapper">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="feature-content">
+                                        <div class="section-title">
+                                            {{-- <span class="sub-title wow fadeInUp">
+                                                Are you ready to travel?
+                                            </span> --}}
+                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
+                                                Charm Connect
+                                            </h2>
+                                        </div>
+                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                        </p>
+                                        {{-- <div class="feature-area">
+                                            <div class="line-shape">
+                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Most Adventure <br>
+                                                            Tour Ever
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Unique adventure tours available.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
+                                                <div class="feature-icon-item">
+                                                    <div class="icon">
+                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h5>
+                                                            Real Tour Starts <br>
+                                                            from Here
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <ul class="circle-icon">
+                                                    <li>
+                                                        <i class="fa-solid fa-badge-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Personalized experiences for every traveler.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> --}}
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
+                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
+                                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="img" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
