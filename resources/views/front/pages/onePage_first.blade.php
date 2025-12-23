@@ -644,11 +644,11 @@
                                             rapidité et tranquillité d’esprit pour tous vos envois intercontinentaux.
                                         </p>
 
-                                       
-                                        <a href="https://charmconnect.charmbusiness.com" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+
+                                        <a href="https://charmconnect.charmbusiness.com" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="https://charmconnect.charmbusiness.com" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                        <a href="https://charmconnect.charmbusiness.com" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
