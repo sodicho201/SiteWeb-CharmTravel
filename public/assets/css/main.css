@@ -449,6 +449,10 @@ span {
     flex-wrap: wrap;
   }
 }
+
+.news-image img{
+  object-fit: cover;
+}
 .about-wrapper .about-content .about-area .about-items .icon {
   width: 67px;
   height: 67px;
