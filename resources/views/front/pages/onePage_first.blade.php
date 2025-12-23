@@ -396,6 +396,31 @@
 
         <!-- Cartes des services -->
         <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                <div class="news-card-items">
+                    <div class="news-image" style="height: 260px">
+                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Service ">
+                        <div class="overlay">
+                            {{-- <div class="service-name">Charm Travels</div> --}}
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                <div class="news-card-items">
+                    <div class="news-image" style="height: 260px">
+                        <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Service 3">
+                        <div class="overlay">
+                            {{-- <div class="service-name">Charm Travels</div> --}}
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
+                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
@@ -416,32 +441,6 @@
                         <div class="overlay">
                             {{-- <div class="service-name">Bénin RAIZ</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="2">Voir plus <i
-                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                <div class="news-card-items">
-                    <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Service 3">
-                        <div class="overlay">
-                            {{-- <div class="service-name">Charm Travels</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
-                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
-                <div class="news-card-items">
-                    <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Service ">
-                        <div class="overlay">
-                            {{-- <div class="service-name">Charm Travels</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
