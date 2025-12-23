@@ -473,71 +473,22 @@
                                             </h2>
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Charm InterVox est un service d’interprétariat professionnel mettant à disposition des interprètes
+                                            qualifiés dans plusieurs langues, dont l’anglais, le portugais et d’autres langues internationales.
+                                            Nous facilitons la communication lors de rencontres, événements, formations et échanges professionnels.
                                         </p>
+
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            En complément, Charm InterVox propose des cours de langues et des programmes de formation adaptés
+                                            aux particuliers comme aux entreprises. Notre objectif est de renforcer les compétences linguistiques
+                                            et de favoriser une communication efficace dans un contexte multiculturel.
                                         </p>
-                                        {{-- <div class="feature-area">
-                                            <div class="line-shape">
-                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Most Adventure <br>
-                                                            Tour Ever
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Unique adventure tours available.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Real Tour Starts <br>
-                                                            from Here
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Personalized experiences for every traveler.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> --}}
+                                        
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Envoyer un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Demandez un interprète<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Travaillez avec nous<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -574,73 +525,23 @@
                                                 Bénin RAIZ
                                             </h2>
                                         </div>
-                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                       <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Bénin Raiz est un service touristique dédié à la découverte authentique du Bénin, de son histoire
+                                            et de son patrimoine culturel. Nous proposons des circuits pensés pour valoriser les traditions,
+                                            les sites historiques et les richesses naturelles du pays.
                                         </p>
+
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            À travers des expériences immersives, Bénin Raiz vous invite à explorer le Bénin autrement,
+                                            en allant à la rencontre de ses peuples, de ses récits et de ses lieux emblématiques.
+                                            Un voyage enrichissant au cœur de l’identité béninoise.
                                         </p>
-                                        {{-- <div class="feature-area">
-                                            <div class="line-shape">
-                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Most Adventure <br>
-                                                            Tour Ever
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Unique adventure tours available.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Real Tour Starts <br>
-                                                            from Here
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Personalized experiences for every traveler.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> --}}
+
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Envoyer un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Réservez un tour<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Réservez un Tour<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -678,72 +579,22 @@
                                             </h2>
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Charm Travels vous accompagne dans l’achat de billets d’avion et l’organisation de vos déplacements,
+                                            qu’ils soient nationaux ou internationaux. Nous vous proposons des solutions simples et accessibles
+                                            pour voyager en toute sérénité, que ce soit pour le tourisme, les affaires ou les déplacements personnels.
                                         </p>
+
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            En complément, nous mettons à votre disposition une sélection d’accessoires de voyage et de services
+                                            touristiques pour améliorer votre confort avant, pendant et après votre voyage. Avec Charm Travels,
+                                            chaque trajet devient une expérience bien préparée et sans stress.
                                         </p>
-                                        {{-- <div class="feature-area">
-                                            <div class="line-shape">
-                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Most Adventure <br>
-                                                            Tour Ever
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Unique adventure tours available.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Real Tour Starts <br>
-                                                            from Here
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Personalized experiences for every traveler.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> --}}
+                                       
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Acheter un billet<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                         <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Tourisme<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -780,72 +631,24 @@
                                                 Charm Connect
                                             </h2>
                                         </div>
-                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                       <p class="wow fadeInUp wow" data-wow-delay=".3s">
+                                            Charm Connect est un service d’envoi de colis fiable et sécurisé, reliant plusieurs pays africains
+                                            et des destinations internationales. Nous assurons l’expédition de vos colis vers le Brésil,
+                                            le Gabon, la France et bien d’autres pays, avec des solutions adaptées à vos besoins personnels
+                                            ou professionnels.
                                         </p>
+
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
-                                            Discover unique adventure packages and personalized travel experiences tailored to your preferences.
+                                            Grâce à notre système de suivi à chaque étape, vous restez informé de l’acheminement de votre colis
+                                            depuis le départ jusqu’à la livraison finale. Charm Connect vous garantit transparence,
+                                            rapidité et tranquillité d’esprit pour tous vos envois intercontinentaux.
                                         </p>
-                                        {{-- <div class="feature-area">
-                                            <div class="line-shape">
-                                                <img src="{{ asset('assets/img/line-shape.png') }}" alt="img">
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".5s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/08.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Most Adventure <br>
-                                                            Tour Ever
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Unique adventure tours available.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="feature-items wow fadeInUp wow" data-wow-delay=".7s">
-                                                <div class="feature-icon-item">
-                                                    <div class="icon">
-                                                        <img src="{{ asset('assets/img/icon/09.svg') }}" alt="img">
-                                                    </div>
-                                                    <div class="content">
-                                                        <h5>
-                                                            Real Tour Starts <br>
-                                                            from Here
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <ul class="circle-icon">
-                                                    <li>
-                                                        <i class="fa-solid fa-badge-check"></i>
-                                                    </li>
-                                                    <li>
-                                                        <span>
-                                                            Personalized experiences for every traveler.
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div> --}}
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+
+                                       
+                                        <a href="https://charmconnect.charmbusiness.com" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                        <a href="https://charmconnect.charmbusiness.com" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
