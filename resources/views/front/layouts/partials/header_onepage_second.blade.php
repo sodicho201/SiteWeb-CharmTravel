@@ -19,9 +19,7 @@
             <span data-text-preloader="M" class="letters-loading">
                 M
             </span>
-            <span data-text-preloader="M" class="letters-loading">
-                M
-            </span>
+
             <span data-text-preloader=" " class="letters-loading">
                 &nbsp;
             </span>
