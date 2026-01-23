@@ -111,7 +111,7 @@
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
                                     <a href="{{ route('home') }}" class="theme-btn">Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="{{ route('home') }}" class="theme-btn style-2">Suivre un envoi<i
+                                    <a href="https://charmconnect.charmbusiness.com/status/commande" class="theme-btn style-2">Suivre un envoi<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -305,13 +305,13 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="{{ asset('assets/img/about/03.jpg') }}" alt="img" class="wow img-custom-anim-left">
+                        <img src="{{ asset('assets/img/instagram/insta19.jpeg') }}" alt="img" class="wow img-custom-anim-left">
                         <div class="shape-image float-bob-y">
                             <img src="{{ asset('assets/img/about/04.png') }}" alt="img">
                         </div>
 
                         <div class="about-image-2">
-                            <img src="{{ asset('assets/img/about/05.jpg') }}" alt="img" class="wow img-custom-anim-top"
+                            <img src="{{ asset('assets/img/instagram/insta17.jpeg') }}" alt="img" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="plane-shape">
                                 <img src="{{ asset('assets/img/about/plane-shape2.png') }}" alt="img">
@@ -683,7 +683,7 @@
                             en toute sécurité et rapidement.
                         </p>
                     </div>
-                    <a href="{{ route('home') }}" class="theme-btn">Envoyer un colis <i
+                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="{{ asset('assets/img/bag-shape.png') }}" alt="img">
@@ -1257,7 +1257,7 @@
                     <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
             </div>
             <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
-                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
+                <a href="https://vimeo.com/1156841827?share=copy&fl=sv&fe=ci" class="video-btn video-popup">
                     <i class="fa-duotone fa-play"></i>
                 </a>
             </div>
@@ -1276,7 +1276,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta1.jpeg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1286,7 +1286,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta2.jpeg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1296,7 +1296,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta3.jpeg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1306,7 +1306,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta4.jpeg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1316,7 +1316,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta2.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta5.jpeg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1326,7 +1326,129 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta1.jpg') }}" alt="insta-img">
+                            <img src="{{ asset('assets/img/instagram/insta6.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta7.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta8.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta9.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta10.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta11.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta12.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta13.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta14.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta18.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta20.jpeg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta21.jpg') }}" alt="insta-img">
+                            <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram-banner-items">
+                        <div class="banner-image">
+                            <img src="{{ asset('assets/img/instagram/insta22.jpg') }}" alt="insta-img">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
