@@ -78,22 +78,22 @@
                         </div>
                         <ul class="list-items">
                             <li>
-                                <a href="{{ route('home') }}">
+                                <a href="javascript:void(0)" class="service-btn" data-service="3">
                                     CHARM TRAVELS
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
+                                <a href="javascript:void(0)" class="service-btn" data-service="4">
                                     CHARM CONNECT
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
+                                <a href="javascript:void(0)" class="service-btn" data-service="1">
                                     CHARM INTERVOX
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
+                                <a href="javascript:void(0)" class="service-btn" data-service="2">
                                     BENIN RAIZ
                                 </a>
                             </li>

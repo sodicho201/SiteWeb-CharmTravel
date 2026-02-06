@@ -64,6 +64,10 @@
 
 @section('content')
 <!-- Hero section start -->
+@php
+    $whatsapp = '5587996351488';
+    $msgTour = urlencode('Bonjour, je souhaite réserver un tour pour découvrir le Bénin avec BENIN RAIZ');
+@endphp
 <section class="hero-section hero-3">
     <div class="swiper hero-slider-3">
         <div class="swiper-wrapper">
@@ -83,9 +87,9 @@
                                     Billets d’avion, tourisme, envoi de colis et interprétariat.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="{{ route('home') }}" class="theme-btn">Réserver un vol<i
+                                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet" class="theme-btn" target="_blank">Réserver un vol<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="{{ route('home') }}" class="theme-btn style-2"> Envoyer un colis<i
+                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn style-2" target="_blank"> Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -109,9 +113,9 @@
                                     Envoi rapide et sécurisé à l’international.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="{{ route('home') }}" class="theme-btn">Envoyer un colis<i
+                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">Envoyer un colis<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="https://charmconnect.charmbusiness.com/status/commande" class="theme-btn style-2">Suivre un envoi<i
+                                    <a href="https://charmconnect.charmbusiness.com/status/commande" class="theme-btn style-2" target="_blank">Suivre un envoi<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -135,10 +139,14 @@
                                     Services d’interprétariat professionnel.
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="{{ route('home') }}" class="theme-btn">Demander un interprète<i
+                                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20demander%20un%20interprète" class="theme-btn" target="_blank">Demander un interprète<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="{{ route('home') }}" class="theme-btn style-2">Nous contacter<i
-                                            class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaiterais avoir plus d’informations sur vos services') }}"
+                                        class="theme-btn style-2"
+                                        target="_blank">
+                                            Nous contacter <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -484,12 +492,21 @@
                                             et de favoriser une communication efficace dans un contexte multiculturel.
                                         </p>
                                         
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Demandez un interprète<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20demander%20un%20interprète"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Demandez un interprète <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Travaillez avec nous<i class="fa-sharp fa-regular fa-arrow-right"></i>
+
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite travailler avec votre agence en tant qu’interprète. Je voudrais connaître les conditions et la procédure de collaboration.') }}"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Travaillez avec nous <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
+
+
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
@@ -537,12 +554,20 @@
                                             Un voyage enrichissant au cœur de l’identité béninoise.
                                         </p>
 
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Réservez un tour<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ $msgTour }}"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Réservez un tour <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Réservez un Tour<i class="fa-sharp fa-regular fa-arrow-right"></i>
-                                        </a>
+
+                                        {{-- <a href="https://wa.me/{{ $whatsappNumber }}?text={{ $msgTour }}"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Réservez un Tour <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        </a> --}}
+
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
@@ -565,6 +590,7 @@
                     <div class="shape-2 float-bob-x">
                         <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
                     </div>
+                  
                     <div class="container">
                         <div class="feature-wrapper">
                             <div class="row g-4">
@@ -590,12 +616,20 @@
                                             chaque trajet devient une expérience bien préparée et sans stress.
                                         </p>
                                        
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Acheter un billet<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Acheter un billet <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Tourisme<i class="fa-sharp fa-regular fa-arrow-right"></i>
+
+                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20avoir%20des%20informations%20sur%20le%20service%20tourisme"
+                                            class="theme-btn wow fadeInUp mb-3"
+                                            data-wow-delay=".9s"
+                                            target="_blank">
+                                                Tourisme <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
+
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
@@ -683,7 +717,7 @@
                             en toute sécurité et rapidement.
                         </p>
                     </div>
-                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn">Envoyer un colis <i
+                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="{{ asset('assets/img/bag-shape.png') }}" alt="img">
@@ -699,7 +733,7 @@
                             vos billets d’avion dès maintenant.
                         </p>
                     </div>
-                    <a href="{{ route('home') }}" class="theme-btn">Réserver un vol <i
+                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet" class="theme-btn" target="_blank">Réserver un vol <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img src="{{ asset('assets/img/plane-shape.png') }}" alt="img">
@@ -1043,21 +1077,20 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fas fa-star"></i>
+                               
                             </div>
                             <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique
-                                nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet
-                                accumsan.
+                               Service très rapide et fiable. J’ai été informé dès l’arrivée de mon colis et j’ai pu le récupérer sans difficulté. Très satisfait du professionnalisme de l’équipe.
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/client-1.png') }}" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
                                     </div>
                                     <div class="text">
-                                        <h4>Kristin Watson</h4>
-                                        <p>Web Designer</p>
+                                        <h4>Denys L. </h4>
+                                        <p>Brésil - São Paulo</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1084,18 +1117,16 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique
-                                nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet
-                                accumsan.
+                               Agence sérieuse avec une excellente communication. Les informations concernant le lieu et les heures de retrait étaient claires et respectées. Je recommande vivement. 
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/client-2.png') }}" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
                                     </div>
                                     <div class="text">
-                                        <h4>Wade Warren</h4>
-                                        <p>President of Sales</p>
+                                        <h4>Carlos M.</h4>
+                                        <p>Brésil</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1122,18 +1153,126 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique
-                                nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet
-                                accumsan.
+                                Colis bien reçu et dans les délais annoncés. Le service est efficace, organisé et rassurant. Très bonne expérience. 
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/client-3.png') }}" alt="img">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
                                     </div>
                                     <div class="text">
-                                        <h4>Brooklyn Simmons</h4>
-                                        <p>President of Sales</p>
+                                        <h4>Junior A.</h4>
+                                        <p>Bénin - Cotonou</p>
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
+                                        viewBox="0 0 45 45" fill="none">
+                                        <path
+                                            d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
+                                            fill="#FFA31A" />
+                                        <path
+                                            d="M44.25 15.2202C44.0793 21.5916 42.7949 27.6571 39.3912 33.1581C37.3175 36.5077 34.3228 38.8501 31.0746 40.9288C30.816 41.0945 30.4729 41.4375 30.1856 41.1198C29.9253 40.8325 30.2346 40.4877 30.3884 40.1987C31.6559 37.8462 33.0401 35.5562 34.1403 33.1142C35.3351 30.4642 36.2917 27.7382 36.9153 24.8939C37.0775 24.1536 36.8967 24.0827 36.2224 24.2415C30.2836 25.6358 24.4277 21.6338 23.5556 15.4348C22.7985 10.0537 26.7751 4.68115 32.1359 3.89022C38.7118 2.92353 44.2162 7.65053 44.25 14.2923C44.25 14.6016 44.25 14.9109 44.25 15.2202Z"
+                                            fill="#FFA31A" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-items">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                               
+                            </div>
+                            <p>
+                                Très satisfait du service. L’équipe est disponible et le suivi est sérieux du début à la fin. Une agence digne de confiance.
+                            </p>
+                            <div class="client-info-items">
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                    </div>
+                                    <div class="text">
+                                        <h4>Patrick S.</h4>
+                                        <p>Bénin</p>
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
+                                        viewBox="0 0 45 45" fill="none">
+                                        <path
+                                            d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
+                                            fill="#FFA31A" />
+                                        <path
+                                            d="M44.25 15.2202C44.0793 21.5916 42.7949 27.6571 39.3912 33.1581C37.3175 36.5077 34.3228 38.8501 31.0746 40.9288C30.816 41.0945 30.4729 41.4375 30.1856 41.1198C29.9253 40.8325 30.2346 40.4877 30.3884 40.1987C31.6559 37.8462 33.0401 35.5562 34.1403 33.1142C35.3351 30.4642 36.2917 27.7382 36.9153 24.8939C37.0775 24.1536 36.8967 24.0827 36.2224 24.2415C30.2836 25.6358 24.4277 21.6338 23.5556 15.4348C22.7985 10.0537 26.7751 4.68115 32.1359 3.89022C38.7118 2.92353 44.2162 7.65053 44.25 14.2923C44.25 14.6016 44.25 14.9109 44.25 15.2202Z"
+                                            fill="#FFA31A" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-items">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>
+                                Mon colis est arrivé rapidement et sans aucun problème. J’ai apprécié la communication et le respect des délais. Je recommande fortement.
+                            </p>
+                            <div class="client-info-items">
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                    </div>
+                                    <div class="text">
+                                        <h4>Ibrahim K.</h4>
+                                        <p>Brésil</p>
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg') }}" width="45" height="45"
+                                        viewBox="0 0 45 45" fill="none">
+                                        <path
+                                            d="M21.5998 15.1662C21.4359 21.2706 20.2326 27.1028 17.1618 32.4687C15.0391 36.1766 11.8636 38.7708 8.31789 40.9881C8.09312 41.1284 7.80413 41.3886 7.55907 41.1588C7.2836 40.9002 7.52189 40.5673 7.66216 40.3087C8.9449 37.9646 10.3121 35.6645 11.4292 33.2309C12.6528 30.564 13.6212 27.811 14.2567 24.9396C14.4257 24.1774 14.255 24.0929 13.535 24.2484C7.64188 25.526 2.16112 21.8976 1.00852 15.9858C-0.0849304 10.38 3.84608 4.78603 9.51275 3.88694C15.9196 2.86954 21.5491 7.65063 21.5998 14.1522C21.6015 14.4902 21.5998 14.8282 21.5998 15.1662Z"
+                                            fill="#FFA31A" />
+                                        <path
+                                            d="M44.25 15.2202C44.0793 21.5916 42.7949 27.6571 39.3912 33.1581C37.3175 36.5077 34.3228 38.8501 31.0746 40.9288C30.816 41.0945 30.4729 41.4375 30.1856 41.1198C29.9253 40.8325 30.2346 40.4877 30.3884 40.1987C31.6559 37.8462 33.0401 35.5562 34.1403 33.1142C35.3351 30.4642 36.2917 27.7382 36.9153 24.8939C37.0775 24.1536 36.8967 24.0827 36.2224 24.2415C30.2836 25.6358 24.4277 21.6338 23.5556 15.4348C22.7985 10.0537 26.7751 4.68115 32.1359 3.89022C38.7118 2.92353 44.2162 7.65053 44.25 14.2923C44.25 14.6016 44.25 14.9109 44.25 15.2202Z"
+                                            fill="#FFA31A" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-items">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                               
+                            </div>
+                            <p>
+                                Service professionnel et rapide. Les informations étaient précises et le retrait s’est fait sans difficulté. Très satisfait.
+                            </p>
+                            <div class="client-info-items">
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                    </div>
+                                    <div class="text">
+                                        <h4>Marc D.</h4>
+                                        <p>Bénin</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1250,17 +1389,35 @@
             </h2>
         </div>
         <div class="video-wrapper">
-            <div class="watch-button">
-                <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Contactez-nous<i
-                        class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                <a href="{{ route('home') }}" class="theme-btn style-2 wow fadeInUp wow" data-wow-delay=".7s">Réserver maintenant
-                    <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+           <div class="watch-button">
+                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite vous contacter pour avoir plus d’informations sur vos services') }}"
+                class="theme-btn wow fadeInUp wow"
+                data-wow-delay=".5s"
+                target="_blank">
+                    Contactez-nous <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                </a>
+
+                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver un service dès maintenant. Merci de me préciser les prochaines étapes.') }}"
+                class="theme-btn style-2 wow fadeInUp wow"
+                data-wow-delay=".7s"
+                target="_blank">
+                    Réserver maintenant <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                </a>
             </div>
+
+            {{-- <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
+                <a href="https://drive.google.com/file/d/15W5oh8l1xFgTJgkgb4HY-mCwPL1_-u6J/view?usp=sharing" class="video-btn video-popup">
+                    <i class="fa-duotone fa-play"></i>
+                </a>
+            </div> --}}
             <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
-                <a href="https://vimeo.com/1156841827?share=copy&fl=sv&fe=ci" class="video-btn video-popup">
+                <a href="https://drive.google.com/file/d/15W5oh8l1xFgTJgkgb4HY-mCwPL1_-u6J/view"
+                class="video-btn"
+                target="_blank">
                     <i class="fa-duotone fa-play"></i>
                 </a>
             </div>
+
         </div>
     </div>
 </section>
