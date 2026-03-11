@@ -455,17 +455,6 @@
                 </div>
             </div>
 
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                <div class="news-card-items">
-                    <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Vente de Kilos">
-                        <div class="overlay">
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="5">Voir plus <i
-                                class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Détails des services (cachés par défaut) -->
@@ -694,56 +683,8 @@
                                         <a href="https://charmconnect.charmbusiness.com" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
-                                        <a href="https://charmconnect.charmbusiness.com/status/commande" target="_blank"lie class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Suivre un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="img" style="border-radius: 10px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service-detail wow img-custom-anim-left-2" id="detail-5" style="display:none;">
-                <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
-                    <div class="shape-1 float-bob-y">
-                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
-                    </div>
-                    <div class="shape-2 float-bob-x">
-                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
-                    </div>
-                    <div class="container">
-                        <div class="feature-wrapper">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="feature-content">
-                                        <div class="section-title">
-                                            <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                                                Vente de Kilos
-                                            </h2>
-                                        </div>
-                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Vous voyagez et vous avez des kilos disponibles dans votre bagage ? Charm Connect vous offre la
-                                            possibilité de rentabiliser votre voyage en vendant vos kilos excédentaires. Une solution simple,
-                                            rapide et avantageuse pour les voyageurs souhaitant optimiser leurs bagages.
-                                        </p>
-
-                                        <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Soumettez votre offre en quelques clics en précisant votre itinéraire, la date de départ et le
-                                            nombre de kilos disponibles. Notre équipe prend en charge la mise en relation et vous accompagne
-                                            tout au long du processus pour un échange en toute confiance.
-                                        </p>
-
-                                        <a href="https://charmconnect.charmbusiness.com/vendre-kilos" target="_blank"
-                                            class="theme-btn wow fadeInUp mb-3"
-                                            data-wow-delay=".9s">
-                                                Vendre mes kilos <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                        <a href="https://charmconnect.charmbusiness.com/vendre-kilos" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
+                                            Vendre mes kilos<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
