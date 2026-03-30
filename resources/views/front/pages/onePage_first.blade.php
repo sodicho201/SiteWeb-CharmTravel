@@ -681,7 +681,7 @@
 
 
                                         <a href="https://charmconnect.charmbusiness.com" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Envoyer une colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            Envoyer un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                         <a href="https://charmconnect.charmbusiness.com/vendre-kilos" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
                                             Vendre mes kilos<i class="fa-sharp fa-regular fa-arrow-right"></i>
