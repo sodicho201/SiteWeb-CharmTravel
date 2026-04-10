@@ -65,7 +65,7 @@
 @section('content')
 <!-- Hero section start -->
 @php
-    $whatsapp = '5587996351488';
+    $whatsapp = '558796231353';
     $msgTour = urlencode('Bonjour, je souhaite réserver un tour pour découvrir le Bénin avec BENIN RAIZ');
 @endphp
 <section class="hero-section hero-3">

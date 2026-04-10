@@ -76,51 +76,44 @@
                 </p>
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
-                    <h4>Contact Info</h4>
+                    <h4>Contactez-nous</h4>
                     <ul>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon">
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="#">Fidjrossè, Carrefour Adjaha, Au dessus de la Pharmacie Sainte Victoire (1er étage), Salle 3.</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon mr-15">
                                 <i class="fal fa-envelope"></i>
                             </div>
-                            <div class="offcanvas__contact-text">
-                                <a href="mailto:info@example.com"><span
-                                        class="mailto:info@example.com">info@example.com</span></a>
-                            </div>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <div class="offcanvas__contact-icon mr-15">
-                                <i class="fal fa-clock"></i>
-                            </div>
-                            <div class="offcanvas__contact-text">
-                                <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                            <div class="offcanvas__contact-text d-flex flex-column">
+                                <a href="mailto:info@charmbusiness.com">info@charmbusiness.com</a>
+                                <a href="mailto:charmtravelsagence@gmail.com">charmtravelsagence@gmail.com</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon mr-15">
                                 <i class="far fa-phone"></i>
                             </div>
-                            <div class="offcanvas__contact-text">
-                                <a href="tel:+11002345909">+11002345909</a>
+                            <div class="offcanvas__contact-text d-flex flex-column">
+                                <a href="https://wa.me/2290169292980" target="_blank">(+229) 0169 29 29 80</a>
+                                <a href="https://wa.me/558796231353" target="_blank">+55 (87) 9623-1353</a>
+                                <a href="tel:+2290156223130">(+229) 0156 22 31 30</a>
                             </div>
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn"> Request A Quote <i
+                        <a href="{{ route('home') }}" class="theme-btn"> Nous contacter <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     </div>
                     <div class="social-icon d-flex align-items-center">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/CharmTravelsAgence&Business" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/charm_travels_" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@charm_travels" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -135,24 +128,23 @@
         <div class="container-fluid">
             <div class="header-top-wrapper-new">
                 <div class="social-icon d-flex align-items-center">
-                    <span>Follow Us</span>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <span>Suivez-nous</span>
+                    <a href="https://www.facebook.com/CharmTravelsAgence&Business" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/charm_travels_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@charm_travels" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
                 <ul class="top-right">
                     <li>
                         <i class="fa-regular fa-envelope"></i>
-                        <a href="mailto:info@touron.com">info@touron.com</a>
+                        <a href="mailto:charmtravelsagence@gmail.com">charmtravelsagence@gmail.com</a>
                     </li>
                     <li>
-                        <i class="fa-regular fa-clock"></i>
-                        Sun to Friday: 8.00 am - 7.00 pm, Austria
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/2290169292980" target="_blank">(+229) 0169 29 29 80</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+256214203215">+256 214 203 215</a>
+                        <a href="tel:+2290156223130">(+229) 0156 22 31 30</a>
                     </li>
                 </ul>
             </div>
@@ -272,7 +264,7 @@
                         </div>
                         <a href="#0" class="search-trigger search-icon"><i
                                 class="fa-regular fa-magnifying-glass"></i></a>
-                        <a href="contact.html" class="theme-btn"> Request A Quote <i
+                        <a href="https://wa.me/5587996231353" class="theme-btn" target="_blank"> Nous contacter <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         <div class="header__hamburger d-xl-none my-auto">
                             <div class="sidebar__toggle">

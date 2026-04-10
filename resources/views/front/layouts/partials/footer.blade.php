@@ -23,14 +23,11 @@
                             <a href="https://www.facebook.com/CharmTravelsAgence&Business" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            {{-- <a href="https://twitter.com/nomdecompte" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nomdeprofil" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a> --}}
                             <a href="https://www.instagram.com/charm_travels_" target="_blank">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@charm_travels" target="_blank">
+                                <i class="fab fa-tiktok"></i>
                             </a>
                         </div>
 
@@ -112,9 +109,7 @@
                                     <i class="fa-regular fa-location-dot"></i>
                                 </div>
                                 <div class="content">
-                                    <h6>Carrefour Adjaha, <br>
-                                        Cotonou
-                                    </h6>
+                                    <h6>Fidjrossè, Carrefour Adjaha, Au dessus de la Pharmacie Sainte Victoire (1er étage), Salle 3.</h6>
                                 </div>
                             </div>
                             <div class="contact-items">
@@ -125,6 +120,26 @@
                                     <h6>
                                         <a href="mailto:info@charmbusiness.com">info@charmbusiness.com</a>
                                     </h6>
+                                    <h6>
+                                        <a href="mailto:charmtravelsagence@gmail.com">charmtravelsagence@gmail.com</a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>
+                                        <a href="https://wa.me/2290169292980" target="_blank">
+                                            (+229) 0169 29 29 80
+                                        </a>
+                                    </h6>
+                                    <h6>
+                                        <a href="https://wa.me/558796231353" target="_blank">
+                                            +55 (87) 9623-1353
+                                        </a>
+                                    </h6>
                                 </div>
                             </div>
                             <div class="contact-items">
@@ -133,13 +148,8 @@
                                 </div>
                                 <div class="content">
                                     <h6>
-                                       <a href="https://wa.me/5587996351488" target="_blank">
-                                            +55 879 963 514 88
-                                        </a>
-                                    </h6>
-                                    <h6>
-                                        <a href="https://wa.me/2290169292980" target="_blank">
-                                            +229 01 692 929 80
+                                        <a href="tel:+2290156223130">
+                                            (+229) 0156 22 31 30
                                         </a>
                                     </h6>
                                 </div>
