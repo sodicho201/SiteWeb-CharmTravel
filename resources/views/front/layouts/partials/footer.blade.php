@@ -6,17 +6,17 @@
                 <div class="col-xl-4 col-lg-5 col-md-8 col-sm-6 wow fadeInUp wow" data-wow-delay=".2s">
                     <div class="single-widget-items text-center">
                         <div class="widget-head">
-                            <a href="{{ route('home') }}">
-                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
+                            <a href="{{ $homeUrl }}">
+                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="{{ __('Logo Charm Travel - Charm Agence & Business') }}">
                             </a>
                         </div>
                         <div class="footer-content">
-                            <h3>Abonnez-vous à notre newsletter</h3>
-                            <p>Recevez nos dernières offres et nouveautés directement dans votre boîte mail.</p>
+                            <h3>{{ __('Abonnez-vous à notre newsletter') }}</h3>
+                            <p>{{ __('Recevez nos dernières offres et nouveautés directement dans votre boîte mail.') }}</p>
                             <div class="footer-input">
-                                <input type="email" id="email2" placeholder="Votre adresse e-mail">
+                                <input type="email" id="email2" placeholder="{{ __('Votre adresse e-mail') }}">
                                 <button class="newsletter-btn theme-btn" type="submit">
-                                    S'abonner <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                    {{ __('S\'abonner') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                 </button>
                             </div>
                            <div class="social-icon d-flex align-items-center justify-content-center">
@@ -37,32 +37,32 @@
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".4s">
                     <div class="single-widget-items">
                         <div class="widget-head">
-                            <h4>Liens rapides</h4>
+                            <h4>{{ __('Liens rapides') }}</h4>
                         </div>
                         <ul class="list-items">
                             <li>
-                                <a href="{{ route('home') }}">
-                                    Accueil
+                                <a href="{{ $homeUrl }}">
+                                    {{ __('Accueil') }}
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
-                                    À propos
+                                <a href="{{ $homeUrl }}#about">
+                                    {{ __('À propos') }}
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
-                                    Services
+                                <a href="{{ $homeUrl }}#service">
+                                    {{ __('Services') }}
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
-                                    Destinations
+                                <a href="{{ $homeUrl }}#destination">
+                                    {{ __('Destinations') }}
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}">
-                                    Témoignages
+                                <a href="{{ $homeUrl }}#testimonial">
+                                    {{ __('Témoignages') }}
                                 </a>
                             </li>
                         </ul>
@@ -71,7 +71,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ps-lg-5 wow fadeInUp wow" data-wow-delay=".6s">
                     <div class="single-widget-items">
                         <div class="widget-head">
-                            <h4>Services</h4>
+                            <h4>{{ __('Services') }}</h4>
                         </div>
                         <ul class="list-items">
                             <li>
@@ -101,7 +101,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ps-xl-5 wow fadeInUp wow" data-wow-delay=".6s">
                     <div class="single-widget-items">
                         <div class="widget-head">
-                            <h4>Contactez -nous</h4>
+                            <h4>{{ __('Contactez -nous') }}</h4>
                         </div>
                         <div class="contact-info">
                             <div class="contact-items">
@@ -118,8 +118,8 @@
                                     <i class="fa-regular fa-clock"></i>
                                 </div>
                                 <div class="content">
-                                    <h6>Lun – Ven : 9h – 18h</h6>
-                                    <h6>Sam : 9h – 13h</h6>
+                                    <h6>{{ __('Lun – Ven : 9h – 18h') }}</h6>
+                                    <h6>{{ __('Sam : 9h – 13h') }}</h6>
                                 </div>
                             </div>
                             <div class="contact-items">
@@ -172,7 +172,7 @@
         <div class="footer-bottom">
             <div class="footer-wrapper">
                 <p class="wow fadeInUp" data-wow-delay=".3s">
-                    Copyright © <span>CHARM AGENCE & BUSINESS,</span> Tous droits réservés.
+                    {{ __('Copyright ©') }} <span>CHARM AGENCE & BUSINESS,</span> {{ __('Tous droits réservés.') }}
                 </p>
                 {{-- <ul class="bottom-list wow fadeInUp" data-wow-delay=".5s">
                     <li>Terms of use</li>

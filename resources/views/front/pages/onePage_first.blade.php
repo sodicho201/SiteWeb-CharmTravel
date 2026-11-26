@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
 
-@section('title', "Charm Travel Cotonou : billets d'avion, colis, tourisme au Bénin")
-@section('meta_description', "Agence de voyage à Cotonou (Fidjrossè) : réservation de billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et interprétariat. Contact WhatsApp.")
+@section('title', __("Charm Travel Cotonou : billets d'avion, colis, tourisme au Bénin"))
+@section('meta_description', __("Agence de voyage à Cotonou (Fidjrossè) : réservation de billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et interprétariat. Contact WhatsApp."))
 
 @section('css')
 {{-- Image du 1er slide : chargée en priorité (affichage le plus important pour la vitesse perçue) --}}
@@ -95,7 +95,7 @@
 <!-- Hero section start -->
 @php
     $whatsapp = '558796231353';
-    $msgTour = urlencode('Bonjour, je souhaite réserver un tour pour découvrir le Bénin avec BENIN RAIZ');
+    $msgTour = urlencode(__('Bonjour, je souhaite réserver un tour pour découvrir le Bénin avec BENIN RAIZ'));
 @endphp
 <section class="hero-section hero-3">
     <div class="swiper hero-slider-3">
@@ -108,17 +108,17 @@
                             <div class="hero-content">
                                 {{-- h1 lu par Google : « Agence de voyage à Cotonou — Voyagez, expédiez en toute confiance, du Bénin au monde entier » --}}
                                 <h1 class="hero-h1">
-                                    <span class="sub-title d-block" data-animation="fadeInUp" data-delay="1.2s">Agence de voyage à Cotonou</span>
-                                    <span class="d-block" data-animation="fadeInUp" data-delay="1.4s">Voyagez, expédiez <br>en toute confiance</span>
-                                    <span class="hero-tagline d-block" data-animation="fadeInUp" data-delay="1.5s">du Bénin au monde entier</span>
+                                    <span class="sub-title d-block" data-animation="fadeInUp" data-delay="1.2s">{{ __('Agence de voyage à Cotonou') }}</span>
+                                    <span class="d-block" data-animation="fadeInUp" data-delay="1.4s">{{ __('Voyagez, expédiez') }} <br>{{ __('en toute confiance') }}</span>
+                                    <span class="hero-tagline d-block" data-animation="fadeInUp" data-delay="1.5s">{{ __('du Bénin au monde entier') }}</span>
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Billets d’avion, tourisme, envoi de colis et interprétariat.
+                                    {{ __('Billets d’avion, tourisme, envoi de colis et interprétariat.') }}
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet" class="theme-btn" target="_blank">Réserver un vol<i
+                                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite acheter un billet')) }}" class="theme-btn" target="_blank">{{ __('Réserver un vol') }}<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn style-2" target="_blank"> Envoyer un colis<i
+                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn style-2" target="_blank"> {{ __('Envoyer un colis') }}<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -133,18 +133,18 @@
                         <div class="col-lg-8">
                             <div class="hero-content">
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Expédition internationale
+                                    {{ __('Expédition internationale') }}
                                 </div>
                                 <h2 class="hero-title" data-animation="fadeInUp" data-delay="1.4s">
-                                   Le monde <br>à votre portée
+                                   {{ __('Le monde') }} <br>{{ __('à votre portée') }}
                                 </h2>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Envoi rapide et sécurisé à l’international.
+                                    {{ __('Envoi rapide et sécurisé à l’international.') }}
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">Envoyer un colis<i
+                                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">{{ __('Envoyer un colis') }}<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="https://charmconnect.charmbusiness.com/status/commande" class="theme-btn style-2" target="_blank">Suivre un envoi<i
+                                    <a href="https://charmconnect.charmbusiness.com/status/commande" class="theme-btn style-2" target="_blank">{{ __('Suivre un envoi') }}<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -159,21 +159,21 @@
                         <div class="col-lg-8">
                             <div class="hero-content">
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Assistance linguistique
+                                    {{ __('Assistance linguistique') }}
                                 </div>
                                 <h2 class="hero-title" data-animation="fadeInUp" data-delay="1.4s">
-                                     Communiquez <br>sans barrières
+                                     {{ __('Communiquez') }} <br>{{ __('sans barrières') }}
                                 </h2>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
-                                    Services d’interprétariat professionnel.
+                                    {{ __('Services d’interprétariat professionnel.') }}
                                 </p>
                                 <div class="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20demander%20un%20interprète" class="theme-btn" target="_blank">Demander un interprète<i
+                                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite demander un interprète')) }}" class="theme-btn" target="_blank">{{ __('Demander un interprète') }}<i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaiterais avoir plus d’informations sur vos services') }}"
+                                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaiterais avoir plus d’informations sur vos services')) }}"
                                         class="theme-btn style-2"
                                         target="_blank">
-                                            Nous contacter <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            {{ __('Nous contacter') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                     </a>
 
                                 </div>
@@ -200,7 +200,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Offres spéciales
+                            {{ __('Offres spéciales') }}
                         </h3>
                     </div>
                 </div>
@@ -212,7 +212,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Guides expérimentés
+                            {{ __('Guides expérimentés') }}
                         </h3>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Support 24/7
+                            {{ __('Support 24/7') }}
                         </h3>
                     </div>
                 </div>
@@ -236,7 +236,7 @@
                     </div>
                     <div class="content">
                         <h3>
-                            Envoi & logistique
+                            {{ __('Envoi & logistique') }}
                         </h3>
                     </div>
                 </div>
@@ -342,13 +342,13 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta19.webp') }}" alt="Voyageuse dans un marché d'artisanat au Bénin" class="wow img-custom-anim-left">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta19.webp') }}" alt="{{ __('Voyageuse dans un marché d\'artisanat au Bénin') }}" class="wow img-custom-anim-left">
                         <div class="shape-image float-bob-y">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/04.webp') }}" alt="Voyageur admirant la vue sur une ville">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/04.webp') }}" alt="{{ __('Voyageur admirant la vue sur une ville') }}">
                         </div>
 
                         <div class="about-image-2">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta17.webp') }}" alt="Voyageur en circuit touristique au Bénin" class="wow img-custom-anim-top"
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta17.webp') }}" alt="{{ __('Voyageur en circuit touristique au Bénin') }}" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="plane-shape">
                                 <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/plane-shape2.png') }}" alt="">
@@ -363,18 +363,15 @@
                     <div class="about-content">
                         <div class="section-title">
                             <span class="sub-title wow fadeInUp">
-                                À propos de notre agence
+                                {{ __('À propos de notre agence') }}
                             </span>
                             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                                Votre partenaire de confiance <br>
-                                pour voyager et connecter le monde
+                                {{ __('Votre partenaire de confiance') }} <br>
+                                {{ __('pour voyager et connecter le monde') }}
                             </h2>
                         </div>
                         <p class="wow fadeInUp wow" data-wow-delay=".5s">
-                            Nous accompagnons particuliers et entreprises dans leurs déplacements,
-                            leurs expéditions internationales et leurs projets touristiques.
-                            Grâce à notre expertise et à un réseau de partenaires fiables,
-                            nous vous garantissons des services rapides, sécurisés et adaptés à vos besoins.
+                            {{ __('Nous accompagnons particuliers et entreprises dans leurs déplacements, leurs expéditions internationales et leurs projets touristiques. Grâce à notre expertise et à un réseau de partenaires fiables, nous vous garantissons des services rapides, sécurisés et adaptés à vos besoins.') }}
                         </p>
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".3s">
                             <div class="about-icon-items">
@@ -383,13 +380,13 @@
                                 </div>
                                 <div class="content">
                                     <h5>
-                                          Réservation Vols /<br> Tourisme
+                                          {{ __('Réservation Vols /') }}<br> {{ __('Tourisme') }}
                                     </h5>
                                 </div>
                             </div>
                             <div class="text">
                                 <p>
-                                    Vols et séjours organisés en toute simplicité.
+                                    {{ __('Vols et séjours organisés en toute simplicité.') }}
                                 </p>
                             </div>
                         </div>
@@ -400,13 +397,13 @@
                                 </div>
                                 <div class="content">
                                     <h5>
-                                        Expédition Colis /<br>Interprétariat
+                                        {{ __('Expédition Colis /') }}<br>{{ __('Interprétariat') }}
                                     </h5>
                                 </div>
                             </div>
                             <div class="text">
                                 <p>
-                                    Expédition internationale et services d'interprétariat.
+                                    {{ __('Expédition internationale et services d\'interprétariat.') }}
                                 </p>
                             </div>
                         </div>
@@ -424,10 +421,10 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">
-                Découvrez nos services
+                {{ __('Découvrez nos services') }}
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                Voyages, expéditions et interprétariat sur mesure
+                {{ __('Voyages, expéditions et interprétariat sur mesure') }}
             </h2>
         </div>
 
@@ -436,10 +433,10 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Charm Connect - envoi de colis à l'international">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="{{ __('Charm Connect - envoi de colis à l\'international') }}">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm Travels</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">{{ __('Voir plus') }} <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -449,10 +446,10 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Charm Travels - vente de billets d'avion">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="{{ __('Charm Travels - vente de billets d\'avion') }}">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm Travels</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">{{ __('Voir plus') }} <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -461,10 +458,10 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Charm InterVox - services d'interprétariat">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="{{ __('Charm InterVox - services d\'interprétariat') }}">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm InterVox</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="1">Voir plus <i
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="1">{{ __('Voir plus') }} <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -474,10 +471,10 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="Bénin RAIZ - circuits touristiques au Bénin">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="{{ __('Bénin RAIZ - circuits touristiques au Bénin') }}">
                         <div class="overlay">
                             {{-- <div class="service-name">Bénin RAIZ</div> --}}
-                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="2">Voir plus <i
+                            <a href="javascript:void(0)" class="theme-btn service-btn" data-service="2">{{ __('Voir plus') }} <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -511,29 +508,25 @@
                                             </h2>
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Charm InterVox est un service d’interprétariat professionnel mettant à disposition des interprètes
-                                            qualifiés dans plusieurs langues, dont l’anglais, le portugais et d’autres langues internationales.
-                                            Nous facilitons la communication lors de rencontres, événements, formations et échanges professionnels.
+                                            {{ __('Charm InterVox est un service d’interprétariat professionnel mettant à disposition des interprètes qualifiés dans plusieurs langues, dont l’anglais, le portugais et d’autres langues internationales. Nous facilitons la communication lors de rencontres, événements, formations et échanges professionnels.') }}
                                         </p>
 
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            En complément, Charm InterVox propose des cours de langues et des programmes de formation adaptés
-                                            aux particuliers comme aux entreprises. Notre objectif est de renforcer les compétences linguistiques
-                                            et de favoriser une communication efficace dans un contexte multiculturel.
+                                            {{ __('En complément, Charm InterVox propose des cours de langues et des programmes de formation adaptés aux particuliers comme aux entreprises. Notre objectif est de renforcer les compétences linguistiques et de favoriser une communication efficace dans un contexte multiculturel.') }}
                                         </p>
                                         
-                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20demander%20un%20interprète"
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite demander un interprète')) }}"
                                             class="theme-btn wow fadeInUp mb-3"
                                             data-wow-delay=".9s"
                                             target="_blank">
-                                                Demandez un interprète <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                                {{ __('Demandez un interprète') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
 
-                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite travailler avec votre agence en tant qu’interprète. Je voudrais connaître les conditions et la procédure de collaboration.') }}"
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite travailler avec votre agence en tant qu’interprète. Je voudrais connaître les conditions et la procédure de collaboration.')) }}"
                                             class="theme-btn wow fadeInUp mb-3"
                                             data-wow-delay=".9s"
                                             target="_blank">
-                                                Travaillez avec nous <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                                {{ __('Travaillez avec nous') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
 
 
@@ -541,7 +534,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Charm InterVox - services d'interprétariat" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="{{ __('Charm InterVox - services d\'interprétariat') }}" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -573,22 +566,18 @@
                                             </h2>
                                         </div>
                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Bénin Raiz est un service touristique dédié à la découverte authentique du Bénin, de son histoire
-                                            et de son patrimoine culturel. Nous proposons des circuits pensés pour valoriser les traditions,
-                                            les sites historiques et les richesses naturelles du pays.
+                                            {{ __('Bénin Raiz est un service touristique dédié à la découverte authentique du Bénin, de son histoire et de son patrimoine culturel. Nous proposons des circuits pensés pour valoriser les traditions, les sites historiques et les richesses naturelles du pays.') }}
                                         </p>
 
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            À travers des expériences immersives, Bénin Raiz vous invite à explorer le Bénin autrement,
-                                            en allant à la rencontre de ses peuples, de ses récits et de ses lieux emblématiques.
-                                            Un voyage enrichissant au cœur de l’identité béninoise.
+                                            {{ __('À travers des expériences immersives, Bénin Raiz vous invite à explorer le Bénin autrement, en allant à la rencontre de ses peuples, de ses récits et de ses lieux emblématiques. Un voyage enrichissant au cœur de l’identité béninoise.') }}
                                         </p>
 
                                         <a href="https://wa.me/{{ $whatsapp }}?text={{ $msgTour }}"
                                             class="theme-btn wow fadeInUp mb-3"
                                             data-wow-delay=".9s"
                                             target="_blank">
-                                                Réservez un tour <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                                {{ __('Réservez un tour') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
 
                                         {{-- <a href="https://wa.me/{{ $whatsappNumber }}?text={{ $msgTour }}"
@@ -602,7 +591,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="Bénin RAIZ - circuits touristiques au Bénin" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="{{ __('Bénin RAIZ - circuits touristiques au Bénin') }}" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -635,36 +624,32 @@
                                             </h2>
                                         </div>
                                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Charm Travels vous accompagne dans l’achat de billets d’avion et l’organisation de vos déplacements,
-                                            qu’ils soient nationaux ou internationaux. Nous vous proposons des solutions simples et accessibles
-                                            pour voyager en toute sérénité, que ce soit pour le tourisme, les affaires ou les déplacements personnels.
+                                            {{ __('Charm Travels vous accompagne dans l’achat de billets d’avion et l’organisation de vos déplacements, qu’ils soient nationaux ou internationaux. Nous vous proposons des solutions simples et accessibles pour voyager en toute sérénité, que ce soit pour le tourisme, les affaires ou les déplacements personnels.') }}
                                         </p>
 
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            En complément, nous mettons à votre disposition une sélection d’accessoires de voyage et de services
-                                            touristiques pour améliorer votre confort avant, pendant et après votre voyage. Avec Charm Travels,
-                                            chaque trajet devient une expérience bien préparée et sans stress.
+                                            {{ __('En complément, nous mettons à votre disposition une sélection d’accessoires de voyage et de services touristiques pour améliorer votre confort avant, pendant et après votre voyage. Avec Charm Travels, chaque trajet devient une expérience bien préparée et sans stress.') }}
                                         </p>
                                        
-                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet"
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite acheter un billet')) }}"
                                             class="theme-btn wow fadeInUp mb-3"
                                             data-wow-delay=".9s"
                                             target="_blank">
-                                                Acheter un billet <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                                {{ __('Acheter un billet') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
 
-                                        <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20avoir%20des%20informations%20sur%20le%20service%20tourisme"
+                                        <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite avoir des informations sur le service tourisme')) }}"
                                             class="theme-btn wow fadeInUp mb-3"
                                             data-wow-delay=".9s"
                                             target="_blank">
-                                                Tourisme <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                                {{ __('Tourisme') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Charm Travels - vente de billets d'avion" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="{{ __('Charm Travels - vente de billets d\'avion') }}" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -696,30 +681,25 @@
                                             </h2>
                                         </div>
                                        <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                                            Charm Connect est un service d’envoi de colis fiable et sécurisé, reliant plusieurs pays africains
-                                            et des destinations internationales. Nous assurons l’expédition de vos colis vers le Brésil,
-                                            le Gabon, la France et bien d’autres pays, avec des solutions adaptées à vos besoins personnels
-                                            ou professionnels.
+                                            {{ __('Charm Connect est un service d’envoi de colis fiable et sécurisé, reliant plusieurs pays africains et des destinations internationales. Nous assurons l’expédition de vos colis vers le Brésil, le Gabon, la France et bien d’autres pays, avec des solutions adaptées à vos besoins personnels ou professionnels.') }}
                                         </p>
 
                                         <p class="wow fadeInUp wow pt-5 pb-5" data-wow-delay=".3s">
-                                            Grâce à notre système de suivi à chaque étape, vous restez informé de l’acheminement de votre colis
-                                            depuis le départ jusqu’à la livraison finale. Charm Connect vous garantit transparence,
-                                            rapidité et tranquillité d’esprit pour tous vos envois intercontinentaux.
+                                            {{ __('Grâce à notre système de suivi à chaque étape, vous restez informé de l’acheminement de votre colis depuis le départ jusqu’à la livraison finale. Charm Connect vous garantit transparence, rapidité et tranquillité d’esprit pour tous vos envois intercontinentaux.') }}
                                         </p>
 
 
                                         <a href="https://charmconnect.charmbusiness.com" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Envoyer un colis<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            {{ __('Envoyer un colis') }}<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                         <a href="https://charmconnect.charmbusiness.com/vendre-kilos" target="_blank" class="theme-btn wow fadeInUp wow mb-3" data-wow-delay=".9s">
-                                            Vendre mes kilos<i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                            {{ __('Vendre mes kilos') }}<i class="fa-sharp fa-regular fa-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Charm Connect - envoi de colis à l'international" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="{{ __('Charm Connect - envoi de colis à l\'international') }}" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -741,13 +721,13 @@
             <div class="col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".3s">
                 <div class="cta-items">
                     <div class="cta-text">
-                        <h2>Expédition rapide</h2>
+                        <h2>{{ __('Expédition rapide') }}</h2>
                         <p>
-                           Envoyez vos colis à l’international <br>
-                            en toute sécurité et rapidement.
+                           {{ __('Envoyez vos colis à l’international') }} <br>
+                            {{ __('en toute sécurité et rapidement.') }}
                         </p>
                     </div>
-                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">Envoyer un colis <i
+                    <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">{{ __('Envoyer un colis') }} <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img loading="lazy" decoding="async" src="{{ asset('assets/img/bag-shape.webp') }}" alt="">
@@ -757,13 +737,13 @@
             <div class="col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".5s">
                 <div class="cta-items style-2">
                     <div class="cta-text">
-                        <h2>Offre spéciale</h2>
+                        <h2>{{ __('Offre spéciale') }}</h2>
                         <p>
-                           Profitez de prix exceptionnels sur <br>
-                            vos billets d’avion dès maintenant.
+                           {{ __('Profitez de prix exceptionnels sur') }} <br>
+                            {{ __('vos billets d’avion dès maintenant.') }}
                         </p>
                     </div>
-                    <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet" class="theme-btn" target="_blank">Réserver un vol <i
+                    <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite acheter un billet')) }}" class="theme-btn" target="_blank">{{ __('Réserver un vol') }} <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
                         <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape.webp') }}" alt="">
@@ -783,20 +763,20 @@
         <div class="section-title-area justify-content-between">
             <div class="section-title">
                 <span class="sub-title wow fadeInUp">
-                    Destinations incontournables
+                    {{ __('Destinations incontournables') }}
                 </span>
                 <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                    Nos destinations populaires
+                    {{ __('Nos destinations populaires') }}
                 </h2>
             </div>
-            {{-- <a href="{{ route('home') }}" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Voir Plus<i
+            {{-- <a href="{{ $homeUrl }}" class="theme-btn wow fadeInUp wow" data-wow-delay=".5s">Voir Plus<i
                     class="fa-sharp fa-regular fa-arrow-right"></i></a> --}}
         </div>
         <div class="row">
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/01.webp') }}" alt="Circuit Bénin Tour">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/01.webp') }}" alt="{{ __('Circuit Bénin Tour') }}">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -805,7 +785,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Bénin
+                                {{ __('Bénin') }}
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -815,14 +795,14 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Bénin Tour') }}" target="_blank" rel="noopener">
-                                Bénin Tour
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Bénin Tour')) }}" target="_blank" rel="noopener">
+                                {{ __('Bénin Tour') }}
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Jours
+                                {{ __('10 Jours') }}
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -830,8 +810,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>Sur devis</h6>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Bénin Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>{{ __('Sur devis') }}</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Bénin Tour')) }}" target="_blank" rel="noopener" class="theme-btn style-2">{{ __('Réserver maintenant') }}<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -840,7 +820,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/02.webp') }}" alt="Circuit Caraïbes Tour">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/02.webp') }}" alt="{{ __('Circuit Caraïbes Tour') }}">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -849,7 +829,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Caraïbes
+                                {{ __('Caraïbes') }}
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -859,14 +839,14 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Caraïbes Tour') }}" target="_blank" rel="noopener">
-                                Caraïbes Tour
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Caraïbes Tour')) }}" target="_blank" rel="noopener">
+                                {{ __('Caraïbes Tour') }}
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Jours
+                                {{ __('10 Jours') }}
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -874,8 +854,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>Sur devis</h6>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Caraïbes Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>{{ __('Sur devis') }}</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Caraïbes Tour')) }}" target="_blank" rel="noopener" class="theme-btn style-2">{{ __('Réserver maintenant') }}<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -884,7 +864,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/03.webp') }}" alt="Circuit Brésil Tour">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/03.webp') }}" alt="{{ __('Circuit Brésil Tour') }}">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -893,7 +873,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Brésil
+                                {{ __('Brésil') }}
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -903,14 +883,14 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Brésil Tour') }}" target="_blank" rel="noopener">
-                                Brésil Tour
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Brésil Tour')) }}" target="_blank" rel="noopener">
+                                {{ __('Brésil Tour') }}
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                10 Jours
+                                {{ __('10 Jours') }}
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -918,8 +898,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>Sur devis</h6>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Brésil Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>{{ __('Sur devis') }}</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Brésil Tour')) }}" target="_blank" rel="noopener" class="theme-btn style-2">{{ __('Réserver maintenant') }}<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -928,7 +908,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/04.webp') }}" alt="Circuit Vodoun Days au Bénin">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/04.webp') }}" alt="{{ __('Circuit Vodoun Days au Bénin') }}">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -937,7 +917,7 @@
                         <ul class="meta">
                             <li>
                                 <i class="fa-thin fa-location-dot"></i>
-                                Bénin
+                                {{ __('Bénin') }}
                             </li>
                             <li class="rating">
                                 <div class="star">
@@ -947,14 +927,14 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Vodoun Days') }}" target="_blank" rel="noopener">
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Vodoun Days')) }}" target="_blank" rel="noopener">
                                 Vodoun Days
                             </a>
                         </h5>
                         <ul class="info">
                             <li>
                                 <i class="fa-regular fa-clock"></i>
-                                5 Jours
+                                {{ __('5 Jours') }}
                             </li>
                             <li>
                                 <i class="fa-thin fa-users"></i>
@@ -962,8 +942,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>Sur devis</h6>
-                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Vodoun Days') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>{{ __('Sur devis') }}</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver le circuit Vodoun Days')) }}" target="_blank" rel="noopener" class="theme-btn style-2">{{ __('Réserver maintenant') }}<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1008,10 +988,10 @@
                 <div class="section-title-area">
                     <div class="section-title">
                         <span class="sub-title text-white wow fadeInUp">
-                            Offres & Promotions
+                            {{ __('Offres & Promotions') }}
                         </span>
                         <h2 class="text-white wow fadeInUp wow" data-wow-delay=".3s">
-                            Offres de dernière minute pour vos voyages et envois
+                            {{ __('Offres de dernière minute pour vos voyages et envois') }}
                         </h2>
                     </div>
                     <div class="array-button justify-content-center wow fadeInUp wow" data-wow-delay=".5s">
@@ -1025,7 +1005,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="{{ __('Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1034,7 +1014,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="{{ __('Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1043,7 +1023,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="{{ __('Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1052,7 +1032,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="{{ __('Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1061,7 +1041,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="{{ __('Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1070,7 +1050,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="{{ __('Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA') }}">
 
                                     </div>
                                 </div>
@@ -1091,10 +1071,10 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">
-                Testimonial
+                {{ __('Avis clients') }}
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".2s">
-                Témoignages de nos clients satisfaits
+                {{ __('Témoignages de nos clients satisfaits') }}
             </h2>
         </div>
         <div class="testimonial-wrapper">
@@ -1111,7 +1091,7 @@
                                
                             </div>
                             <p>
-                               Service très rapide et fiable. J’ai été informé dès l’arrivée de mon colis et j’ai pu le récupérer sans difficulté. Très satisfait du professionnalisme de l’équipe.
+                               {{ __('Service très rapide et fiable. J’ai été informé dès l’arrivée de mon colis et j’ai pu le récupérer sans difficulté. Très satisfait du professionnalisme de l’équipe.') }}
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1120,7 +1100,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Denys L. </h4>
-                                        <p>Brésil - São Paulo</p>
+                                        <p>{{ __('Brésil - São Paulo') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1147,7 +1127,7 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <p>
-                               Agence sérieuse avec une excellente communication. Les informations concernant le lieu et les heures de retrait étaient claires et respectées. Je recommande vivement. 
+                               {{ __('Agence sérieuse avec une excellente communication. Les informations concernant le lieu et les heures de retrait étaient claires et respectées. Je recommande vivement.') }} 
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1156,7 +1136,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Carlos M.</h4>
-                                        <p>Brésil</p>
+                                        <p>{{ __('Brésil') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1183,7 +1163,7 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <p>
-                                Colis bien reçu et dans les délais annoncés. Le service est efficace, organisé et rassurant. Très bonne expérience. 
+                                {{ __('Colis bien reçu et dans les délais annoncés. Le service est efficace, organisé et rassurant. Très bonne expérience.') }} 
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1192,7 +1172,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Junior A.</h4>
-                                        <p>Bénin - Cotonou</p>
+                                        <p>{{ __('Bénin - Cotonou') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1220,7 +1200,7 @@
                                
                             </div>
                             <p>
-                                Très satisfait du service. L’équipe est disponible et le suivi est sérieux du début à la fin. Une agence digne de confiance.
+                                {{ __('Très satisfait du service. L’équipe est disponible et le suivi est sérieux du début à la fin. Une agence digne de confiance.') }}
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1229,7 +1209,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Patrick S.</h4>
-                                        <p>Bénin</p>
+                                        <p>{{ __('Bénin') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1256,7 +1236,7 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <p>
-                                Mon colis est arrivé rapidement et sans aucun problème. J’ai apprécié la communication et le respect des délais. Je recommande fortement.
+                                {{ __('Mon colis est arrivé rapidement et sans aucun problème. J’ai apprécié la communication et le respect des délais. Je recommande fortement.') }}
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1265,7 +1245,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Ibrahim K.</h4>
-                                        <p>Brésil</p>
+                                        <p>{{ __('Brésil') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1293,7 +1273,7 @@
                                
                             </div>
                             <p>
-                                Service professionnel et rapide. Les informations étaient précises et le retrait s’est fait sans difficulté. Très satisfait.
+                                {{ __('Service professionnel et rapide. Les informations étaient précises et le retrait s’est fait sans difficulté. Très satisfait.') }}
                             </p>
                             <div class="client-info-items">
                                 <div class="client-info">
@@ -1302,7 +1282,7 @@
                                     </div>
                                     <div class="text">
                                         <h4>Marc D.</h4>
-                                        <p>Bénin</p>
+                                        <p>{{ __('Bénin') }}</p>
                                     </div>
                                 </div>
                                 <div class="icon">
@@ -1321,8 +1301,8 @@
                     </div>
                 </div>
                 <div class="array-button">
-                    <button class="array-prevs">Précédent</button>
-                    <button class="array-nexts">Suivant</button>
+                    <button class="array-prevs">{{ __('Précédent') }}</button>
+                    <button class="array-nexts">{{ __('Suivant') }}</button>
                 </div>
             </div>
         </div>
@@ -1339,14 +1319,14 @@
                     <div class="choose-us-content">
                         <div class="section-title">
                             <span class="sub-title wow fadeInUp">
-                                Pourquoi nous choisir ?
+                                {{ __('Pourquoi nous choisir ?') }}
                             </span>
                             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                                Obtenez la meilleure expérience de voyage
+                                {{ __('Obtenez la meilleure expérience de voyage') }}
                             </h2>
                         </div>
                         <p class="wow fadeInUp wow" data-wow-delay=".3s">
-                            Nous offrons des services de voyage, d’expédition et d’interprétariat fiables, rapides et personnalisés, pour que chaque expérience soit réussie.
+                            {{ __('Nous offrons des services de voyage, d’expédition et d’interprétariat fiables, rapides et personnalisés, pour que chaque expérience soit réussie.') }}
                         </p>
                         <div class="choose-us-area">
                             <div class="line-shape">
@@ -1358,10 +1338,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        Réservation de vols
+                                        {{ __('Réservation de vols') }}
                                     </h4>
                                     <p>
-                                        Achetez vos billets d’avion rapidement et en toute sécurité.
+                                        {{ __('Achetez vos billets d’avion rapidement et en toute sécurité.') }}
                                     </p>
                                 </div>
                             </div>
@@ -1371,10 +1351,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        Services d’interprétariat
+                                        {{ __('Services d’interprétariat') }}
                                     </h4>
                                     <p>
-                                        Facilitez vos échanges internationaux avec nos experts linguistiques.
+                                        {{ __('Facilitez vos échanges internationaux avec nos experts linguistiques.') }}
                                     </p>
                                 </div>
                             </div>
@@ -1384,10 +1364,10 @@
                                 </h3>
                                 <div class="content">
                                     <h4>
-                                        Expédition de colis
+                                        {{ __('Expédition de colis') }}
                                     </h4>
                                     <p>
-                                       Envoyez vos colis à l’international rapidement et en toute sécurité.
+                                       {{ __('Envoyez vos colis à l’international rapidement et en toute sécurité.') }}
                                     </p>
                                 </div>
                             </div>
@@ -1396,7 +1376,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                     <div class="choose-us-thumb">
-                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/choose-us-bg.webp') }}" alt="Voyager avec Charm Travel" class="wow img-custom-anim-left">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/choose-us-bg.webp') }}" alt="{{ __('Voyager avec Charm Travel') }}" class="wow img-custom-anim-left">
                     </div>
                 </div>
             </div>
@@ -1412,26 +1392,26 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sub-title wow fadeInUp">
-                Découvrez-nous
+                {{ __('Découvrez-nous') }}
             </span>
             <h2 class="wow fadeInUp wow" data-wow-delay=".3s">
-                 Des expériences <br>inoubliables
+                 {{ __('Des expériences') }} <br>{{ __('inoubliables') }}
             </h2>
         </div>
         <div class="video-wrapper">
            <div class="watch-button">
-                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite vous contacter pour avoir plus d’informations sur vos services') }}"
+                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite vous contacter pour avoir plus d’informations sur vos services')) }}"
                 class="theme-btn wow fadeInUp wow"
                 data-wow-delay=".5s"
                 target="_blank">
-                    Contactez-nous <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                    {{ __('Contactez-nous') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                 </a>
 
-                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver un service dès maintenant. Merci de me préciser les prochaines étapes.') }}"
+                <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode(__('Bonjour, je souhaite réserver un service dès maintenant. Merci de me préciser les prochaines étapes.')) }}"
                 class="theme-btn style-2 wow fadeInUp wow"
                 data-wow-delay=".7s"
                 target="_blank">
-                    Réserver maintenant <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                    {{ __('Réserver maintenant') }} <i class="fa-sharp fa-regular fa-arrow-right"></i>
                 </a>
             </div>
 
@@ -1456,14 +1436,14 @@
 <div class="instagram-banner fix section-padding bg-cover"
     style="background-image: url('{{ asset('assets/img/instagram/bg.webp') }}');">
     <div class="instagram-wrapper">
-        <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Suivez-nous sur Instagram</h2>
+        <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">{{ __('Suivez-nous sur Instagram') }}</h2>
         <div class="swiper instagram-banner-slider">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta1.webp') }}" alt="Statue dans une forêt sacrée au Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta1.webp') }}" alt="{{ __('Statue dans une forêt sacrée au Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1473,7 +1453,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta2.webp') }}" alt="Voyageuse devant une fresque murale au Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta2.webp') }}" alt="{{ __('Voyageuse devant une fresque murale au Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1483,7 +1463,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta3.webp') }}" alt="Entrée de la forêt sacrée de Kpassè à Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta3.webp') }}" alt="{{ __('Entrée de la forêt sacrée de Kpassè à Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1493,7 +1473,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta4.webp') }}" alt="Voyageuse devant la fresque Hwendo Man Bou au Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta4.webp') }}" alt="{{ __('Voyageuse devant la fresque Hwendo Man Bou au Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1503,7 +1483,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta5.webp') }}" alt="Groupe de voyageurs en visite dans un village au Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta5.webp') }}" alt="{{ __('Groupe de voyageurs en visite dans un village au Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1513,7 +1493,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta6.webp') }}" alt="Voyageuse avec un python au temple des pythons de Ouidah">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta6.webp') }}" alt="{{ __('Voyageuse avec un python au temple des pythons de Ouidah') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1523,7 +1503,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta7.jpeg') }}" alt="Groupe de touristes avec leur guide à Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta7.jpeg') }}" alt="{{ __('Groupe de touristes avec leur guide à Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1533,7 +1513,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta8.jpeg') }}" alt="Visite guidée sur la Route des Esclaves à Ouidah">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta8.jpeg') }}" alt="{{ __('Visite guidée sur la Route des Esclaves à Ouidah') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1543,7 +1523,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta9.jpeg') }}" alt="Voyageurs sur la plage de Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta9.jpeg') }}" alt="{{ __('Voyageurs sur la plage de Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1553,7 +1533,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta10.webp') }}" alt="Voyageuse avec un python à Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta10.webp') }}" alt="{{ __('Voyageuse avec un python à Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1563,7 +1543,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta11.jpeg') }}" alt="Groupe de voyageurs Charm Travel au Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta11.jpeg') }}" alt="{{ __('Groupe de voyageurs Charm Travel au Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1573,7 +1553,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta12.jpeg') }}" alt="Guide et touristes en visite à Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta12.jpeg') }}" alt="{{ __('Guide et touristes en visite à Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1583,7 +1563,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta13.webp') }}" alt="Groupe de voyageurs devant la Porte du Non-Retour à Ouidah">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta13.webp') }}" alt="{{ __('Groupe de voyageurs devant la Porte du Non-Retour à Ouidah') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1593,7 +1573,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta14.webp') }}" alt="Voyageurs devant la Porte du Non-Retour à Ouidah, Bénin">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta14.webp') }}" alt="{{ __('Voyageurs devant la Porte du Non-Retour à Ouidah, Bénin') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1604,7 +1584,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta18.webp') }}" alt="Voyageuse sur la Route des Esclaves à Ouidah">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta18.webp') }}" alt="{{ __('Voyageuse sur la Route des Esclaves à Ouidah') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1615,7 +1595,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta20.webp') }}" alt="Statue dans la forêt sacrée de Kpassè à Ouidah">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta20.webp') }}" alt="{{ __('Statue dans la forêt sacrée de Kpassè à Ouidah') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1625,7 +1605,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta21.jpg') }}" alt="Bureau de l'agence Charm Travel à Cotonou">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta21.jpg') }}" alt="{{ __('Bureau de l\'agence Charm Travel à Cotonou') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1635,7 +1615,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta22.webp') }}" alt="Conseiller de l'agence Charm Travel à son bureau de Cotonou">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta22.webp') }}" alt="{{ __('Conseiller de l\'agence Charm Travel à son bureau de Cotonou') }}">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>

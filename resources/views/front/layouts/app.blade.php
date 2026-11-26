@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+@php
+    use App\Support\Locales;
+    $lang = Locales::info();
+@endphp
+<html lang="{{ $lang['html'] }}">
 <head>
     @php
         // @section('x', '...') échappe déjà sa valeur : on la décode pour éviter un double échappement.
-        $seoTitle = html_entity_decode(trim($__env->yieldContent('title', 'Charm Travel - Agence de voyage à Cotonou, Bénin')), ENT_QUOTES, 'UTF-8');
-        $seoDescription = html_entity_decode(trim($__env->yieldContent('meta_description', "Charm Travel, agence de voyage à Cotonou (Bénin) : billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et services d'interprétariat.")), ENT_QUOTES, 'UTF-8');
+        $seoTitle = html_entity_decode(trim($__env->yieldContent('title', __('Charm Travel - Agence de voyage à Cotonou, Bénin'))), ENT_QUOTES, 'UTF-8');
+        $seoDescription = html_entity_decode(trim($__env->yieldContent('meta_description', __("Charm Travel, agence de voyage à Cotonou (Bénin) : billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et services d'interprétariat."))), ENT_QUOTES, 'UTF-8');
         $seoUrl = url()->current();
         $seoImage = asset('assets/img/og-image.jpg');
     @endphp
@@ -17,9 +21,20 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ $seoUrl }}">
 
+    <!-- Versions linguistiques (hreflang). x-default = / qui oriente le visiteur vers sa langue. -->
+    @foreach (Locales::ALL as $code => $info)
+    <link rel="alternate" hreflang="{{ $info['hreflang'] }}" href="{{ Locales::homeUrl($code) }}">
+    @endforeach
+    <link rel="alternate" hreflang="x-default" href="{{ Locales::homeUrl(Locales::DEFAULT) }}">
+
     <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale" content="{{ $lang['og'] }}">
+    @foreach (Locales::ALL as $code => $info)
+        @if ($code !== Locales::current())
+    <meta property="og:locale:alternate" content="{{ $info['og'] }}">
+        @endif
+    @endforeach
     <meta property="og:site_name" content="Charm Travel">
     <meta property="og:title" content="{{ $seoTitle }}">
     <meta property="og:description" content="{{ $seoDescription }}">
@@ -27,7 +42,7 @@
     <meta property="og:image" content="{{ $seoImage }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Voyageurs à bord d'un avion - Charm Travel">
+    <meta property="og:image:alt" content="{{ __("Voyageurs à bord d'un avion - Charm Travel") }}">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
@@ -89,7 +104,7 @@
                 'https://www.instagram.com/charm_travels_',
                 'https://www.tiktok.com/@charm_travels',
             ],
-            'makesOffer' => array_map(fn ($s) => ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $s]], [
+            'makesOffer' => array_map(fn ($s) => ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => __($s)]], [
                 "Billets d'avion",
                 'Envoi de colis à l\'international',
                 'Circuits touristiques au Bénin',
@@ -118,6 +133,20 @@
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/color.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
+    <style>
+        /* Sélecteur de langue (en-tête) */
+        .lang-switcher { display: flex; gap: 2px; margin-right: 16px; padding: 4px; border-radius: 30px; background: rgba(255, 255, 255, 0.25); }
+        .lang-switcher a { padding: 7px 11px; border-radius: 20px; font-size: 14px; font-weight: 700; line-height: 1; color: var(--white); transition: background .3s, color .3s; }
+        .lang-switcher a:hover { color: var(--theme); }
+        .lang-switcher a.active, .lang-switcher a.active:hover { background: var(--theme); color: var(--white); }
+        .sticky .lang-switcher { background: rgba(0, 0, 0, 0.06); }
+        .sticky .lang-switcher a:not(.active) { color: var(--header); }
+        @media (max-width: 575px) {
+            .lang-switcher { margin-right: 10px; }
+            .lang-switcher a { padding: 6px 8px; font-size: 13px; }
+        }
+    </style>
 
     @yield('css')
 </head>

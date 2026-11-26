@@ -76,7 +76,7 @@
             </span>
 
         </div>
-        <p class="text-center">Loading</p>
+        <p class="text-center">{{ __('Chargement') }}</p>
     </div>
     <div class="loader">
         <div class="row">
@@ -112,8 +112,8 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
+                        <a href="{{ $homeUrl }}">
+                            <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="{{ __('Logo Charm Travel - Charm Agence & Business') }}">
                         </a>
                     </div>
                     <div class="offcanvas__close">
@@ -123,12 +123,11 @@
                     </div>
                 </div>
                 <p class="text d-none d-xl-block">
-                    Nous concevons des expériences de voyage inoubliables en alliant confort, découverte et aventure.
-                    Grâce à des destinations soigneusement sélectionnées et des services personnalisés, nous transformons chaque voyage en un souvenir unique.
+                    {{ __('Nous concevons des expériences de voyage inoubliables en alliant confort, découverte et aventure. Grâce à des destinations soigneusement sélectionnées et des services personnalisés, nous transformons chaque voyage en un souvenir unique.') }}
                 </p>
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
-                    <h4>Contactez -nous</h4>
+                    <h4>{{ __('Contactez -nous') }}</h4>
                     <ul>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon">
@@ -167,7 +166,7 @@
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="{{ route('home') }}" class="theme-btn"> Nous contacter <i
+                        <a href="{{ $homeUrl }}" class="theme-btn"> {{ __('Nous contacter') }} <i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     </div>
                     <div class="social-icon d-flex align-items-center">
@@ -188,11 +187,11 @@
         <div class="mega-menu-wrapper">
             <div class="header-main">
                 <div class="logo">
-                    <a href="{{ route('home') }}" class="header-logo">
-                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
+                    <a href="{{ $homeUrl }}" class="header-logo">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="{{ __('Logo Charm Travel - Charm Agence & Business') }}">
                     </a>
-                    <a href="{{ route('home') }}" class="header-logo-2">
-                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
+                    <a href="{{ $homeUrl }}" class="header-logo-2">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="{{ __('Logo Charm Travel - Charm Agence & Business') }}">
                     </a>
                 </div>
                 <div class="mean__menu-wrapper">
@@ -200,29 +199,36 @@
                         <nav id="mobile-menu">
                             <ul>
                                 <li class="active menu-thumb">
-                                    <a href="{{ route('home') }}">Home</a>
+                                    <a href="{{ $homeUrl }}">{{ __('Accueil') }}</a>
                                 </li>
                                 <li class="active d-xl-none">
-                                    <a href="{{ route('home') }}">Accueil</a>
+                                    <a href="{{ $homeUrl }}">{{ __('Accueil') }}</a>
                                 </li>
                                 <li>
-                                    <a href="#about">A propos</a>
+                                    <a href="#about">{{ __('A propos') }}</a>
                                 </li>
                                 <li>
-                                    <a href="#service">Services</a>
+                                    <a href="#service">{{ __('Services') }}</a>
                                 </li>
                                 <li>
-                                    <a href="#destination">Destination</a>
+                                    <a href="#destination">{{ __('Destination') }}</a>
                                 </li>
                                 <li>
-                                    <a href="#testimonial">Témoignages</a>
+                                    <a href="#testimonial">{{ __('Témoignages') }}</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="header-right d-flex justify-content-end align-items-center">
-                    <a href="{{ route('home') }}" class="theme-btn"> Nous contacter <i
+                    {{-- Sélecteur de langue : liens directs vers chaque version (indexables par Google) --}}
+                    <nav class="lang-switcher" aria-label="{{ __('Langue') }}">
+                        @foreach (\App\Support\Locales::ALL as $code => $info)
+                            <a href="{{ \App\Support\Locales::homeUrl($code) }}" hreflang="{{ $info['hreflang'] }}" lang="{{ $info['html'] }}"
+                               @class(['active' => $code === app()->getLocale()]) @if ($code === app()->getLocale()) aria-current="page" @endif>{{ $info['label'] }}</a>
+                        @endforeach
+                    </nav>
+                    <a href="{{ $homeUrl }}" class="theme-btn"> {{ __('Nous contacter') }} <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="header__hamburger d-xl-none my-auto">
                         <div class="sidebar__toggle">
@@ -242,7 +248,7 @@
         <div class="search-cell">
             <form method="get">
                 <div class="search-field-holder">
-                    <input type="search" class="main-search-input" placeholder="Search...">
+                    <input type="search" class="main-search-input" placeholder="{{ __('Rechercher...') }}">
                 </div>
             </form>
         </div>
