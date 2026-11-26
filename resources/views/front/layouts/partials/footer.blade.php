@@ -1,5 +1,5 @@
 <!-- Footer Section Start -->
-<footer class="footer-section fix bg-cover" style="background-image: url('{{ asset('assets/img/footer/footer-bg.jpg') }}');">
+<footer class="footer-section fix bg-cover" style="background-image: url('{{ asset('assets/img/footer/footer-bg.webp') }}');">
     <div class="container">
         <div class="footer-widget-wrapper-new">
             <div class="row">
@@ -7,7 +7,7 @@
                     <div class="single-widget-items text-center">
                         <div class="widget-head">
                             <a href="{{ route('home') }}">
-                                <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="img">
+                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
                             </a>
                         </div>
                         <div class="footer-content">

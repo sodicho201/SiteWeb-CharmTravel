@@ -88,6 +88,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.svg') }}">
 
+    <!-- Polices du thème (Manrope, Kalam) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400&family=Manrope:wght@300..800&display=swap">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">

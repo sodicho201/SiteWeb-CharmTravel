@@ -4,6 +4,8 @@
 @section('meta_description', "Agence de voyage à Cotonou (Fidjrossè) : réservation de billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et interprétariat. Contact WhatsApp.")
 
 @section('css')
+{{-- Image du 1er slide : chargée en priorité (affichage le plus important pour la vitesse perçue) --}}
+<link rel="preload" as="image" href="{{ asset('assets/img/hero/03.webp') }}" fetchpriority="high">
 <style>
     /* Titres des slides 2 et 3 : h2 pour le SEO (un seul h1), même rendu visuel que le h1 */
     .hero-3 .hero-content .hero-title {
@@ -87,7 +89,7 @@
     <div class="swiper hero-slider-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.webp') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -113,7 +115,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/04.png') }}')"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/04.webp') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -139,7 +141,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.png') }}')"></div>
+                <div class="hero-image bg-cover" style="background-image: url('{{ asset('assets/img/hero/03.webp') }}')"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -182,7 +184,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="{{ asset('assets/img/icon/01.svg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/icon/01.svg') }}" alt="">
                     </div>
                     <div class="content">
                         <h3>
@@ -194,7 +196,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
                 <div class="feature-card-items">
                     <div class="icon bg-color">
-                        <img src="{{ asset('assets/img/icon/02.svg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/icon/02.svg') }}" alt="">
                     </div>
                     <div class="content">
                         <h3>
@@ -206,7 +208,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="{{ asset('assets/img/icon/03.svg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/icon/03.svg') }}" alt="">
                     </div>
                     <div class="content">
                         <h3>
@@ -218,7 +220,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
                 <div class="feature-card-items">
                     <div class="icon">
-                        <img src="{{ asset('assets/img/icon/04.svg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/icon/04.svg') }}" alt="">
                     </div>
                     <div class="content">
                         <h3>
@@ -234,7 +236,7 @@
 <!-- Destination-category Section Start -->
 <section class="destination-category-section section-padding pt-0">
     <div class="plane-shape float-bob-y">
-        <img src="{{ asset('assets/img/destination/shape.png') }}" alt="img" style="width: 100%">
+        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/shape.png') }}" alt="" style="width: 100%">
     </div>
     {{-- <div class="container">
         <div class="section-title text-center">
@@ -251,7 +253,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="{{ asset('assets/img/destination/category1.jpg') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/category1.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -264,7 +266,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="{{ asset('assets/img/destination/category2.jpg') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/category2.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -277,7 +279,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="{{ asset('assets/img/destination/category3.jpg') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/category3.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -290,7 +292,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="{{ asset('assets/img/destination/category4.jpg') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/category4.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -303,7 +305,7 @@
                 <div class="swiper-slide">
                     <div class="destination-category-item">
                         <div class="category-image">
-                            <img src="{{ asset('assets/img/destination/category5.jpg') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/category5.jpg') }}" alt="img">
                             <div class="category-content">
                                 <h5>
                                     <a href="destination-details.html">Adventure</a>
@@ -328,19 +330,19 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="{{ asset('assets/img/instagram/insta19.jpeg') }}" alt="img" class="wow img-custom-anim-left">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta19.webp') }}" alt="Voyageuse dans un marché d'artisanat au Bénin" class="wow img-custom-anim-left">
                         <div class="shape-image float-bob-y">
-                            <img src="{{ asset('assets/img/about/04.png') }}" alt="img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/04.webp') }}" alt="Voyageur admirant la vue sur une ville">
                         </div>
 
                         <div class="about-image-2">
-                            <img src="{{ asset('assets/img/instagram/insta17.jpeg') }}" alt="img" class="wow img-custom-anim-top"
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta17.webp') }}" alt="Voyageur en circuit touristique au Bénin" class="wow img-custom-anim-top"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="plane-shape">
-                                <img src="{{ asset('assets/img/about/plane-shape2.png') }}" alt="img">
+                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/plane-shape2.png') }}" alt="">
                             </div>
                             {{-- <div class="circle-image">
-                                <img src="{{ asset('assets/img/about/circle.png') }}" alt="img">
+                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/circle.png') }}" alt="">
                             </div> --}}
                         </div>
                     </div>
@@ -365,7 +367,7 @@
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".3s">
                             <div class="about-icon-items">
                                 <div class="icon">
-                                    <img src="{{ asset('assets/img/about/cheak.png') }}" alt="img">
+                                    <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/cheak.png') }}" alt="">
                                 </div>
                                 <div class="content">
                                     <h5>
@@ -382,7 +384,7 @@
                         <div class="about-items wow fadeInUp wow" data-wow-delay=".5s">
                             <div class="about-icon-items">
                                 <div class="icon">
-                                    <img src="{{ asset('assets/img/about/cheak.png') }}" alt="img">
+                                    <img loading="lazy" decoding="async" src="{{ asset('assets/img/about/cheak.png') }}" alt="">
                                 </div>
                                 <div class="content">
                                     <h5>
@@ -422,7 +424,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Service ">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Charm Connect - envoi de colis à l'international">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm Travels</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="4">Voir plus <i
@@ -435,7 +437,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Service 3">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Charm Travels - vente de billets d'avion">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm Travels</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="3">Voir plus <i
@@ -447,7 +449,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Service 1">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Charm InterVox - services d'interprétariat">
                         <div class="overlay">
                             {{-- <div class="service-name">Charm InterVox</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="1">Voir plus <i
@@ -460,7 +462,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="news-card-items">
                     <div class="news-image" style="height: 260px">
-                        <img src="{{ asset('assets/img/services/logo_tourisme_benin.jpeg') }}" alt="Service 2">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="Bénin RAIZ - circuits touristiques au Bénin">
                         <div class="overlay">
                             {{-- <div class="service-name">Bénin RAIZ</div> --}}
                             <a href="javascript:void(0)" class="theme-btn service-btn" data-service="2">Voir plus <i
@@ -476,12 +478,12 @@
         <div class="service-details mt-5">
             <div class="service-detail wow img-custom-anim-left-2" id="detail-1" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.webp') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape1.png') }}" alt="">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape2.png') }}" alt="">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -527,7 +529,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="img" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_service_interpretation.jpeg') }}" alt="Charm InterVox - services d'interprétariat" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -538,12 +540,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-2" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.webp') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape1.png') }}" alt="">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape2.png') }}" alt="">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -588,7 +590,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img src="{{ asset('assets/img/services/logo_tourisme_benin.jpeg') }}" alt="img" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_tourisme_benin.webp') }}" alt="Bénin RAIZ - circuits touristiques au Bénin" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -599,12 +601,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-3" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.webp') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape1.png') }}" alt="">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape2.png') }}" alt="">
                     </div>
                   
                     <div class="container">
@@ -650,7 +652,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="img" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_vente_billet.jpeg') }}" alt="Charm Travels - vente de billets d'avion" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -661,12 +663,12 @@
 
             <div class="service-detail wow img-custom-anim-left-2" id="detail-4" style="display:none;">
                 <div class="travel-feature-section section-padding fix"
-                    style="background-image: url('{{ asset('assets/img/travel-bg.jpg') }}') border-radius: 10px;">
+                    style="background-image: url('{{ asset('assets/img/travel-bg.webp') }}') border-radius: 10px;">
                     <div class="shape-1 float-bob-y">
-                        <img src="{{ asset('assets/img/plane-shape1.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape1.png') }}" alt="">
                     </div>
                     <div class="shape-2 float-bob-x">
-                        <img src="{{ asset('assets/img/plane-shape2.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape2.png') }}" alt="">
                     </div>
                     <div class="container">
                         <div class="feature-wrapper">
@@ -705,7 +707,7 @@
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                                     <div class="feature-image wow img-custom-anim-left" style="width: 100%; height: 100%;">
-                                        <img src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="img" style="border-radius: 10px;">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/services/logo_charmConnect.jpeg') }}" alt="Charm Connect - envoi de colis à l'international" style="border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -720,7 +722,7 @@
 <!-- Cta Section Start -->
 <section class="cta-section section-padding pt-0 pb-0">
     <div class="mobile-shape">
-        <img src="{{ asset('assets/img/mobile.png') }}" alt="img">
+        <img loading="lazy" decoding="async" src="{{ asset('assets/img/mobile.png') }}" alt="">
     </div>
     <div class="container">
         <div class="row g-4">
@@ -736,7 +738,7 @@
                     <a href="https://charmconnect.charmbusiness.com" class="theme-btn" target="_blank">Envoyer un colis <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
-                        <img src="{{ asset('assets/img/bag-shape.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/bag-shape.webp') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -752,7 +754,7 @@
                     <a href="https://wa.me/{{ $whatsapp }}?text=Bonjour%20je%20souhaite%20acheter%20un%20billet" class="theme-btn" target="_blank">Réserver un vol <i
                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                     <div class="cta-image">
-                        <img src="{{ asset('assets/img/plane-shape.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/plane-shape.webp') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -763,7 +765,7 @@
 <!-- Popular-destination Section Start -->
 <section class="popular-destination-section section-padding" id="destination">
     <div class="car-shape float-bob-x">
-        <img src="{{ asset('assets/img/destination/car.png') }}" alt="img">
+        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/car.png') }}" alt="">
     </div>
     <div class="container">
         <div class="section-title-area justify-content-between">
@@ -782,7 +784,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".2s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="{{ asset('assets/img/destination/01.jpg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/01.webp') }}" alt="Circuit Bénin Tour">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -801,7 +803,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="{{ route('home') }}">
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Bénin Tour') }}" target="_blank" rel="noopener">
                                 Bénin Tour
                             </a>
                         </h5>
@@ -816,8 +818,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>Sur devis</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Bénin Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -826,7 +828,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".4s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="{{ asset('assets/img/destination/02.jpg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/02.webp') }}" alt="Circuit Caraïbes Tour">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -845,8 +847,8 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="{{ route('home') }}">
-                                Craïbes Tour
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Caraïbes Tour') }}" target="_blank" rel="noopener">
+                                Caraïbes Tour
                             </a>
                         </h5>
                         <ul class="info">
@@ -860,8 +862,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>Sur devis</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Caraïbes Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -870,7 +872,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".6s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="{{ asset('assets/img/destination/03.jpg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/03.webp') }}" alt="Circuit Brésil Tour">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -889,7 +891,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="{{ route('home') }}">
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Brésil Tour') }}" target="_blank" rel="noopener">
                                 Brésil Tour
                             </a>
                         </h5>
@@ -904,8 +906,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>Sur devis</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Brésil Tour') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -914,7 +916,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp wow" data-wow-delay=".8s">
                 <div class="destination-card-items">
                     <div class="destination-image">
-                        <img src="{{ asset('assets/img/destination/04.jpg') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/destination/04.webp') }}" alt="Circuit Vodoun Days au Bénin">
                         <div class="heart-icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -933,7 +935,7 @@
                             </li>
                         </ul>
                         <h5>
-                            <a href="{{ route('home') }}">
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Vodoun Days') }}" target="_blank" rel="noopener">
                                 Vodoun Days
                             </a>
                         </h5>
@@ -948,8 +950,8 @@
                             </li>
                         </ul>
                         <div class="price">
-                            <h6>$59.00<span>/Par jour</span></h6>
-                            <a href="{{ route('home') }}" class="theme-btn style-2">Réserver maintenant<i
+                            <h6>Sur devis</h6>
+                            <a href="https://wa.me/{{ $whatsapp }}?text={{ urlencode('Bonjour, je souhaite réserver le circuit Vodoun Days') }}" target="_blank" rel="noopener" class="theme-btn style-2">Réserver maintenant<i
                                     class="fa-sharp fa-regular fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -962,13 +964,13 @@
 
 <!-- Deals-offer Section Start -->
 <section class="deals-offer-section section-padding fix bg-cover"
-    style="background-image: url('{{ asset('assets/img/offer/bg.jpg') }}');">
+    style="background-image: url('{{ asset('assets/img/offer/bg.webp') }}');">
     <div class="deals-offer-wrapper">
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="price-items">
                     {{-- <div class="price-image wow fadeInUp wow" data-wow-delay=".2s">
-                        <img src="{{ asset('assets/img/offer/price.png') }}" alt="img">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/price.png') }}" alt="">
                     </div> --}}
                     {{-- <div class="coming-soon-timer">
                         <div class="timer-content wow fadeInUp" data-wow-delay=".2s">
@@ -1011,7 +1013,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
 
                                     </div>
                                 </div>
@@ -1020,7 +1022,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
 
                                     </div>
                                 </div>
@@ -1029,7 +1031,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
 
                                     </div>
                                 </div>
@@ -1038,7 +1040,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
 
                                     </div>
                                 </div>
@@ -1047,7 +1049,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre1.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre1.webp') }}" alt="Offre vol aller simple Rio de Janeiro - Cotonou avec Air France à 442 060 FCFA">
 
                                     </div>
                                 </div>
@@ -1056,7 +1058,7 @@
                             <div class="swiper-slide">
                                 <div class="offer-items">
                                     <div class="offer-image">
-                                        <img src="{{ asset('assets/img/offer/offre2.jpg') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/offer/offre2.webp') }}" alt="Offre vol aller simple Fortaleza - Cotonou avec Air France à 414 770 FCFA">
 
                                     </div>
                                 </div>
@@ -1072,7 +1074,7 @@
 <!-- Testimonial Section Start -->
 <section class="testimonial-section section-padding fix bg-cover" id="testimonial">
     <div class="bag-shape float-bob-x">
-        <img src="{{ asset('assets/img/testimonial/bag-shape.png') }}" alt="img">
+        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/bag-shape.webp') }}" alt="">
     </div>
     <div class="container">
         <div class="section-title text-center">
@@ -1102,7 +1104,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Denys L. </h4>
@@ -1138,7 +1140,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Carlos M.</h4>
@@ -1174,7 +1176,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Junior A.</h4>
@@ -1211,7 +1213,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Patrick S.</h4>
@@ -1247,7 +1249,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Ibrahim K.</h4>
@@ -1284,7 +1286,7 @@
                             <div class="client-info-items">
                                 <div class="client-info">
                                     <div class="client-image">
-                                        <img src="{{ asset('assets/img/testimonial/ano.png') }}" alt="img">
+                                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/testimonial/ano.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Marc D.</h4>
@@ -1317,7 +1319,7 @@
 
 <!-- Choose-us-section Start -->
 <section class="choose-us-section section-padding bg-cover fix"
-    style="background-image: url('{{ asset('assets/img/choose-us-bg-2.jpg') }}')">
+    style="background-image: url('{{ asset('assets/img/choose-us-bg-2.webp') }}')">
     <div class="container">
         <div class="choose-us-wrapper">
             <div class="row g-4 align-items-center">
@@ -1336,7 +1338,7 @@
                         </p>
                         <div class="choose-us-area">
                             <div class="line-shape">
-                                <img src="{{ asset('assets/img/line-shape2.png') }}" alt="img">
+                                <img loading="lazy" decoding="async" src="{{ asset('assets/img/line-shape2.png') }}" alt="">
                             </div>
                             <div class="choose-us-items wow fadeInUp wow" data-wow-delay=".3s">
                                 <h3 class="number">
@@ -1382,7 +1384,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6 wow fadeInUp wow" data-wow-delay=".3s">
                     <div class="choose-us-thumb">
-                        <img src="{{ asset('assets/img/choose-us-bg.png') }}" alt="img" class="wow img-custom-anim-left">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/img/choose-us-bg.webp') }}" alt="Voyager avec Charm Travel" class="wow img-custom-anim-left">
                     </div>
                 </div>
             </div>
@@ -1393,7 +1395,7 @@
 <!-- watch-video-section Start -->
 <section class="watch-video-section section-padding fix">
     <div class="bg-shape">
-        <img src="{{ asset('assets/img/map-bg.png') }}" alt="img">
+        <img loading="lazy" decoding="async" src="{{ asset('assets/img/map-bg.webp') }}" alt="">
     </div>
     <div class="container">
         <div class="section-title text-center">
@@ -1421,12 +1423,12 @@
                 </a>
             </div>
 
-            {{-- <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
+            {{-- <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.webp') }}');">
                 <a href="https://drive.google.com/file/d/15W5oh8l1xFgTJgkgb4HY-mCwPL1_-u6J/view?usp=sharing" class="video-btn video-popup">
                     <i class="fa-duotone fa-play"></i>
                 </a>
             </div> --}}
-            <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.jpg') }}');">
+            <div class="video-image bg-cover" style="background-image: url('{{ asset('assets/img/video-bg.webp') }}');">
                 <a href="https://drive.google.com/file/d/15W5oh8l1xFgTJgkgb4HY-mCwPL1_-u6J/view"
                 class="video-btn"
                 target="_blank">
@@ -1440,16 +1442,16 @@
 
 <!-- Instagram Banner Section Start -->
 <div class="instagram-banner fix section-padding bg-cover"
-    style="background-image: url('{{ asset('assets/img/instagram/bg.jpg') }}');">
+    style="background-image: url('{{ asset('assets/img/instagram/bg.webp') }}');">
     <div class="instagram-wrapper">
-        <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h2>
+        <h2 class="text-center wow fadeInUp" data-wow-delay=".3s">Suivez-nous sur Instagram</h2>
         <div class="swiper instagram-banner-slider">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta1.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta1.webp') }}" alt="Statue dans une forêt sacrée au Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1459,7 +1461,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta2.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta2.webp') }}" alt="Voyageuse devant une fresque murale au Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1469,7 +1471,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta3.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta3.webp') }}" alt="Entrée de la forêt sacrée de Kpassè à Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1479,7 +1481,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta4.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta4.webp') }}" alt="Voyageuse devant la fresque Hwendo Man Bou au Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1489,7 +1491,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta5.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta5.webp') }}" alt="Groupe de voyageurs en visite dans un village au Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1499,7 +1501,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta6.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta6.webp') }}" alt="Voyageuse avec un python au temple des pythons de Ouidah">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1509,7 +1511,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta7.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta7.jpeg') }}" alt="Groupe de touristes avec leur guide à Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1519,7 +1521,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta8.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta8.jpeg') }}" alt="Visite guidée sur la Route des Esclaves à Ouidah">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1529,7 +1531,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta9.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta9.jpeg') }}" alt="Voyageurs sur la plage de Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1539,7 +1541,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta10.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta10.webp') }}" alt="Voyageuse avec un python à Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1549,7 +1551,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta11.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta11.jpeg') }}" alt="Groupe de voyageurs Charm Travel au Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1559,7 +1561,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta12.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta12.jpeg') }}" alt="Guide et touristes en visite à Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1569,7 +1571,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta13.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta13.webp') }}" alt="Groupe de voyageurs devant la Porte du Non-Retour à Ouidah">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1579,7 +1581,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta14.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta14.webp') }}" alt="Voyageurs devant la Porte du Non-Retour à Ouidah, Bénin">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1590,7 +1592,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta18.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta18.webp') }}" alt="Voyageuse sur la Route des Esclaves à Ouidah">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1601,7 +1603,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta20.jpeg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta20.webp') }}" alt="Statue dans la forêt sacrée de Kpassè à Ouidah">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1611,7 +1613,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta21.jpg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta21.jpg') }}" alt="Bureau de l'agence Charm Travel à Cotonou">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -1621,7 +1623,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/instagram/insta22.jpg') }}" alt="insta-img">
+                            <img loading="lazy" decoding="async" src="{{ asset('assets/img/instagram/insta22.webp') }}" alt="Conseiller de l'agence Charm Travel à son bureau de Cotonou">
                             <a href="https://www.instagram.com/charm_travels_" target="_blank" class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>

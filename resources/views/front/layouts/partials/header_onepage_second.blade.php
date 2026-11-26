@@ -113,7 +113,7 @@
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
+                            <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
                         </a>
                     </div>
                     <div class="offcanvas__close">
@@ -189,10 +189,10 @@
             <div class="header-main">
                 <div class="logo">
                     <a href="{{ route('home') }}" class="header-logo">
-                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
                     </a>
                     <a href="{{ route('home') }}" class="header-logo-2">
-                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="logo-img">
+                        <img src="{{ asset('assets/img/logo/logo_principal-1.png') }}" alt="Logo Charm Travel - Charm Agence &amp; Business">
                     </a>
                 </div>
                 <div class="mean__menu-wrapper">
