@@ -1,9 +1,24 @@
 @extends('front.layouts.app')
 
-@section('title', 'Accueil - CharmTravel')
+@section('title', "Charm Travel Cotonou : billets d'avion, colis, tourisme au Bénin")
+@section('meta_description', "Agence de voyage à Cotonou (Fidjrossè) : réservation de billets d'avion, envoi de colis à l'international, circuits touristiques au Bénin et interprétariat. Contact WhatsApp.")
 
 @section('css')
 <style>
+    /* Titres des slides 2 et 3 : h2 pour le SEO (un seul h1), même rendu visuel que le h1 */
+    .hero-3 .hero-content .hero-title {
+        color: var(--white);
+        margin-bottom: 20px;
+        font-size: 74px;
+        font-weight: 800;
+        line-height: 114%;
+    }
+    @media (max-width: 1399px) { .hero-3 .hero-content .hero-title { font-size: 53px; } }
+    @media (max-width: 1199px) { .hero-3 .hero-content .hero-title { font-size: 42px; } }
+    @media (max-width: 991px)  { .hero-3 .hero-content .hero-title { font-size: 50px; } }
+    @media (max-width: 767px)  { .hero-3 .hero-content .hero-title { font-size: 45px; } }
+    @media (max-width: 575px)  { .hero-3 .hero-content .hero-title { font-size: 40px; } }
+
     .news-card-items {
         position: relative;
         overflow: hidden;
@@ -106,9 +121,9 @@
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
                                     Expédition internationale
                                 </div>
-                                <h1 data-animation="fadeInUp" data-delay="1.4s">
+                                <h2 class="hero-title" data-animation="fadeInUp" data-delay="1.4s">
                                    Le monde <br>à votre portée
-                                </h1>
+                                </h2>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
                                     Envoi rapide et sécurisé à l’international.
                                 </p>
@@ -132,9 +147,9 @@
                                 <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
                                     Assistance linguistique
                                 </div>
-                                <h1 data-animation="fadeInUp" data-delay="1.4s">
+                                <h2 class="hero-title" data-animation="fadeInUp" data-delay="1.4s">
                                      Communiquez <br>sans barrières
-                                </h1>
+                                </h2>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
                                     Services d’interprétariat professionnel.
                                 </p>
