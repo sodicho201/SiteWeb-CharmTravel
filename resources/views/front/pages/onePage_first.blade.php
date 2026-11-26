@@ -21,6 +21,18 @@
     @media (max-width: 767px)  { .hero-3 .hero-content .hero-title { font-size: 45px; } }
     @media (max-width: 575px)  { .hero-3 .hero-content .hero-title { font-size: 40px; } }
 
+    /* h1 du 1er slide : petit texte + slogan + mention, regroupés dans un seul h1 */
+    .hero-3 .hero-content .hero-h1 .sub-title {
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .hero-3 .hero-content .hero-h1 .hero-tagline {
+        font-size: 0.6em;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 8px;
+    }
+
     .news-card-items {
         position: relative;
         overflow: hidden;
@@ -94,11 +106,11 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="hero-content">
-                                <div class="sub-title" data-animation="fadeInUp" data-delay="1.2s">
-                                    Services internationaux
-                                </div>
-                                <h1 data-animation="fadeInUp" data-delay="1.4s">
-                                     Voyagez, expédiez <br>en toute confiance
+                                {{-- h1 lu par Google : « Agence de voyage à Cotonou — Voyagez, expédiez en toute confiance, du Bénin au monde entier » --}}
+                                <h1 class="hero-h1">
+                                    <span class="sub-title d-block" data-animation="fadeInUp" data-delay="1.2s">Agence de voyage à Cotonou</span>
+                                    <span class="d-block" data-animation="fadeInUp" data-delay="1.4s">Voyagez, expédiez <br>en toute confiance</span>
+                                    <span class="hero-tagline d-block" data-animation="fadeInUp" data-delay="1.5s">du Bénin au monde entier</span>
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay="1.6s">
                                     Billets d’avion, tourisme, envoi de colis et interprétariat.
