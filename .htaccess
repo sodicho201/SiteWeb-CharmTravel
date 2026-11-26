@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# .htaccess RACINE du projet (hébergement mutualisé type Hostinger)
+#
+# Sur l'hébergement, la racine web pointe sur le dossier du projet et non sur
+# public/. Ce fichier envoie TOUTES les requêtes vers public/ :
+#  - le site est servi à la racine du domaine (sans "/public" dans les URLs) ;
+#  - les fichiers hors de public/ (.env, storage/logs, composer.json, artisan,
+#    vendor...) ne sont plus accessibles depuis le web.
+# Le .htaccess de public/ prend ensuite le relais (routes Laravel).
+# ---------------------------------------------------------------------------
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Tout est servi depuis public/
+    # (la redirection des anciennes URLs /public/... est dans public/.htaccess)
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Ceinture + bretelles si mod_rewrite était absent : bloquer les fichiers sensibles
+<FilesMatch "^(\.env.*|composer\.(json|lock)|package(-lock)?\.json|artisan|phpunit\.xml|vite\.config\.js|.*\.log)$">
+    Require all denied
+</FilesMatch>
