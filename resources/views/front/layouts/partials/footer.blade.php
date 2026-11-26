@@ -112,6 +112,16 @@
                                     <h6>Fidjrossè, Carrefour Adjaha, Au dessus de la Pharmacie Sainte Victoire (1er étage), Salle 3.</h6>
                                 </div>
                             </div>
+                            {{-- Horaires : garder identiques à openingHoursSpecification (layouts/app.blade.php) et à la fiche Google Business Profile --}}
+                            <div class="contact-items">
+                                <div class="icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="content">
+                                    <h6>Lun – Ven : 9h – 18h</h6>
+                                    <h6>Sam : 9h – 13h</h6>
+                                </div>
+                            </div>
                             <div class="contact-items">
                                 <div class="icon">
                                     <i class="fa-regular fa-envelope"></i>
