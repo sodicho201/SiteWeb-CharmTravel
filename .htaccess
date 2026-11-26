@@ -14,6 +14,11 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Une seule adresse pour le site : www.charmbusiness.com -> charmbusiness.com (301)
+    # Sinon Google voit deux sites identiques (contenu en double).
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+
     # Tout est servi depuis public/
     # (la redirection des anciennes URLs /public/... est dans public/.htaccess)
     RewriteRule ^(.*)$ public/$1 [L]
